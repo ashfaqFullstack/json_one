@@ -1,0 +1,16 @@
+.button_dark {
+    background-color: #171717;
+    color: white;
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 6px 17px;
+}
+
+.gray_button {
+    text-align: center;
+    border: 2px solid rgb(195, 195, 195);
+}
+
+.contact {
+    color: #666666;
+}

@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root {
   --color-black: 0 0 0;
   --color-white: 255 255 255;
@@ -104,7 +106,7 @@
 }
 
 /* Dark theme */
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --color-red: 248 113 113;
     --color-green: 162 230 53;
@@ -166,7 +168,8 @@ html.grabbing * {
 }
 
 /* Give the text editor mentions/marks a blue accent color */
-.lb-root[class^="lb-tiptap-"], .lb-root[class*=" lb-tiptap-"] {
+.lb-root[class^="lb-tiptap-"],
+.lb-root[class*=" lb-tiptap-"] {
   --lb-accent: var(--color-alternative-accent);
 }
 
