@@ -14,3 +14,11 @@
 .contact {
     color: #666666;
 }
+
+.dropdown {
+    background-color: white !important;
+}
+
+.dropdown_item:focus {
+    background-color: white;
+}

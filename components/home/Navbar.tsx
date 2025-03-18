@@ -13,32 +13,25 @@ import { nanoid } from "nanoid";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from '@/data/JsononeLogo.svg'
+import Chevron from '@/data/chevron_down.svg'
 import style from './navbar.module.css'
+import { landings } from "@/data/navbar";
 
 const Navbar = () => {
   return (
-    <div className=" rounded-none !h-[64px] bg-[#FAFAFA] px-[20px] border-0 flex flex-row items-center justify-between gap-6 ">
+    <div className=" rounded-none !h-[64px] bg-[#FAFAFA] px-[20px] md:px-[15px] lg:px-[20px] border-0 flex flex-row items-center justify-between ">
       {/* <ShadcnKit className="text-primary cursor-pointer" /> */}
       {/* <Image src={Logo} alt="jsonone" className="!block md:!hidden" /> */}
       <div className="flex justify-center items-center" >
-        <Image src={Logo} alt="jsonone" className="mr-[47px]" />
-        <ul className="hidden md:flex items-center gap-10 py-[17px] ">
-          <li className="text-primary font-medium">
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#features">Features</a>
-          </li>
-          <li>
-            <a href="#pricing">Pricing</a>
-          </li>
-          <li>
-            <a href="#faqs">FAQs</a>
-          </li>
+        <Image src={Logo} alt="jsonone" className="mr-[10px] lg:mr-[35px]" />
+        <ul className="hidden md:flex items-center gap-[15px] lg:gap-[24px] py-[17px] ">
           <li>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <span className="cursor-pointer">Pages</span>
+                <div className="flex items-center gap-2 cursor-pointer" >
+                  <span className="">Products</span>
+                  <Image src={Chevron} alt="chevron" />
+                </div>
               </DropdownMenuTrigger>
 
               <DropdownMenuContent align="start">
@@ -50,13 +43,55 @@ const Navbar = () => {
               </DropdownMenuContent>
             </DropdownMenu>
           </li>
+          <li>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <div className="flex items-center gap-2 cursor-pointer" >
+                  <span className="">Solution</span>
+                  <Image src={Chevron} alt="chevron" />
+                </div>
+              </DropdownMenuTrigger>
+
+              <DropdownMenuContent align="start">
+                {landings.map((page) => (
+                  <DropdownMenuItem key={page.id}>
+                    <Link href={page.route}>{page.title}</Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+          </li>
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <div className="flex items-center gap-2 cursor-pointer" >
+                <span className="">Resources</span>
+                <Image src={Chevron} alt="chevron" />
+              </div>
+            </DropdownMenuTrigger>
+
+            <DropdownMenuContent align="start">
+              {landings.map((page) => (
+                <DropdownMenuItem key={page.id}>
+                  <Link href={page.route}>{page.title}</Link>
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuContent>
+          </DropdownMenu>
+          <li>
+            <a href="#docs">Docs</a>
+          </li>
+
+          <li>
+            <a href="#pricing">Pricing</a>
+          </li>
+
         </ul>
       </div>
 
       <div className="flex items-center py-[16px]">
         <div className={`${style.contact} hidden md:block`}>Contact</div>
         <Button variant="default"
-          className={` ${style.gray_button} hidden md:block !h-[32px] !px-[12px]  !rounded-[6px] !mx-[10px]`}
+          className={`${style.gray_button} hidden md:block !h-[32px] !px-[12px]  !rounded-[6px] !mx-[10px]`}
         >
           Login
         </Button>
@@ -88,12 +123,60 @@ const Navbar = () => {
               </Button>
             </DropdownMenuTrigger>
 
-            <DropdownMenuContent align="end">
+            <DropdownMenuContent className={`${style.dropdown} gap-2`} align="end">
               <DropdownMenuItem>
-                <a href="#home">Home</a>
+                <DropdownMenu>
+                  <DropdownMenuTrigger asChild>
+                    <div className="flex items-center gap-2 cursor-pointer" >
+                      <span className="">Products</span>
+                      <Image src={Chevron} alt="chevron" />
+                    </div>
+                  </DropdownMenuTrigger>
+
+                  <DropdownMenuContent className={style.dropdown} align="start">
+                    {landings.map((page) => (
+                      <DropdownMenuItem key={page.id}>
+                        <Link href={page.route}>{page.title}</Link>
+                      </DropdownMenuItem>
+                    ))}
+                  </DropdownMenuContent>
+                </DropdownMenu>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <a href="#features">Features</a>
+                <DropdownMenu>
+                  <DropdownMenuTrigger asChild>
+                    <div className="flex items-center gap-2 cursor-pointer" >
+                      <span className="">Solution</span>
+                      <Image src={Chevron} alt="chevron" />
+                    </div>
+                  </DropdownMenuTrigger>
+
+                  <DropdownMenuContent className={style.dropdown} align="start">
+                    {landings.map((page) => (
+                      <DropdownMenuItem key={page.id}>
+                        <Link href={page.route}>{page.title}</Link>
+                      </DropdownMenuItem>
+                    ))}
+                  </DropdownMenuContent>
+                </DropdownMenu>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <DropdownMenu>
+                  <DropdownMenuTrigger asChild>
+                    <div className="flex items-center gap-2 cursor-pointer" >
+                      <span className="">Resources</span>
+                      <Image src={Chevron} alt="chevron" />
+                    </div>
+                     </DropdownMenuTrigger>
+
+                  <DropdownMenuContent className={style.dropdown} align="start">
+                    {landings.map((page) => (
+                      <DropdownMenuItem key={page.id}>
+                        <Link href={page.route}>{page.title}</Link>
+                      </DropdownMenuItem>
+                    ))}
+                  </DropdownMenuContent>
+                </DropdownMenu>
               </DropdownMenuItem>
               <DropdownMenuItem>
                 <a href="#pricing">Pricing</a>
@@ -128,52 +211,6 @@ const Navbar = () => {
   );
 };
 
-const landings = [
-  {
-    id: nanoid(),
-    title: "Landing 01",
-    route: "/project-management",
-  },
-  {
-    id: nanoid(),
-    title: "Landing 02",
-    route: "/crm-landing",
-  },
-  {
-    id: nanoid(),
-    title: "Landing 03",
-    route: "/ai-content-landing",
-  },
-  {
-    id: nanoid(),
-    title: "Landing 04",
-    route: "/new-intro-landing",
-  },
-  {
-    id: nanoid(),
-    title: "Landing 05",
-    route: "/about-us-landing",
-  },
-  {
-    id: nanoid(),
-    title: "Landing 06",
-    route: "/contact-us-landing",
-  },
-  {
-    id: nanoid(),
-    title: "Landing 07",
-    route: "/faqs-landing",
-  },
-  {
-    id: nanoid(),
-    title: "Landing 08",
-    route: "/pricing-landing",
-  },
-  {
-    id: nanoid(),
-    title: "Landing 09",
-    route: "/career-landing",
-  },
-];
+
 
 export default Navbar;
