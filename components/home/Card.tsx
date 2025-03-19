@@ -2,6 +2,14 @@ import pic from '@/data/mongodbicon.svg'
 import Image from 'next/image'
 import MongoDB from '@/data/mongodb.svg'
 import { BsPlusLg } from "react-icons/bs";
+import edgefunction from '@/data/edge_function.svg'
+import golbal from '@/data/global_perf.svg'
+import user from '@/data/userId.svg'
+import sarvar from '@/data/sarvar.svg'
+
+
+
+
 
 function Card() {
     return (
@@ -14,7 +22,7 @@ function Card() {
                 <div className=' md:col-span-4 col-span-12  lg:border-r border-[#e3dcdc] md:pr-[48px]  md:py-[164px] '>
                     <div className='max-w-[70%] md:max-w-full mx-auto md:mx-0 mt-[58px] md:mt-0 flex items-center justify-center md:justify-start text-[#666666] text-center md:text-start gap-[8px]'>
                         <Image src={MongoDB} alt="" />
-                        <div className=' md:text-[19px] font-normal'>Start  Your project</div>
+                        <div className=' md:text-[19px] font-normal'>Start Your project</div>
                     </div>
 
                     <div className='max-w-[70%] md:max-w-full mx-auto md:mx-0 md:text-[20px]  mt-[16px] text-[18px] font-semibold '>
@@ -27,15 +35,15 @@ function Card() {
                 </div>
                 <div className=' md:col-span-4 col-span-12   lg:border-r border-[#e3dcdc] px-[25px] lg:px-[48px]  md:py-[149px]'>
                     <div className='max-w-[70%] md:max-w-full mx-auto md:mx-0 mt-[58px] md:mt-0 flex items-center justify-center md:justify-start text-[#666666] text-center md:text-start gap-[8px]'>
-                        <Image src={MongoDB} alt="" />
-                        <div className=' md:text-[19px] font-normal'>Start  Your project</div>
+                        <Image src={edgefunction} alt="" />
+                        <div className=' md:text-[19px] font-normal'>Edge Functions</div>
                     </div>
 
                     <div className='max-w-[70%] md:max-w-full mx-auto md:mx-0 md:text-[20px]  mt-[16px] text-[18px] font-semibold '>
-                        100% Portable
-                        Built-in Auth with RLS
-                        Easily Extendable
-                        it&apos;s your launch day.
+                        Infrastructure designed to
+                        automatically mitigate
+                        DDoS attacks and protect
+                        your information.
 
                     </div>
                 </div>
@@ -52,43 +60,43 @@ function Card() {
                 {/* second row of content */}
                 <div className=' md:col-span-4 col-span-12 lg:border-r border-[#e3dcdc] md:pr-[48px] md:pb-[84px] '>
                     <div className='max-w-[70%] md:max-w-full mx-auto md:mx-0 mt-[18px] md:mt-0  flex items-center justify-center md:justify-start text-[#666666] text-center md:text-start gap-[8px]'>
-                        <Image src={MongoDB} alt="" />
-                        <div className=' md:text-[19px] font-normal'>Start  Your project</div>
+                        <Image src={golbal} alt="" />
+                        <div className=' md:text-[19px] font-normal'>Global performance</div>
                     </div>
 
                     <div className='max-w-[70%] md:max-w-full mx-auto md:mx-0 md:text-[20px]  mt-[16px] text-[18px] font-semibold '>
-                        100% Portable
-                        Built-in Auth with RLS
-                        Easily Extendable
-                        it&apos;s your launch day.
+                        Automatically route traffic
+                        to over 100 edge locations
+                        around the globe, for a fast
+                        site, anywhere in the world.
 
                     </div>
                 </div>
                 <div className=' md:col-span-4 col-span-12 lg:border-r border-[#e3dcdc] px-[25px] lg:px-[48px] md:pb-[84px] '>
                     <div className='max-w-[70%] md:max-w-full mx-auto md:mx-0 mt-[18px] md:mt-0  flex items-center justify-center md:justify-start text-[#666666] text-center md:text-start gap-[8px]'>
-                        <Image src={MongoDB} alt="" />
-                        <div className=' md:text-[19px] font-normal'>Start  Your project</div>
+                        <Image src={user} alt="" />
+                        <div className=' md:text-[19px] font-normal'>User-first protection</div>
                     </div>
 
                     <div className='max-w-[70%] md:max-w-full mx-auto md:mx-0 md:text-[20px]  mt-[16px] text-[18px] font-semibold '>
-                        100% Portable
-                        Built-in Auth with RLS
-                        Easily Extendable
-                        it&apos;s your launch day.
+                        Vercel automatically
+                        caches your site to ensure
+                        that even if a backend
+                        service goes down, your
+                        site stays up.
 
                     </div>
                 </div>
                 <div className=' md:col-span-4 col-span-12  px-[25px] lg:px-[48px]   md:pb-[84px]   '>
                     <div className='max-w-[70%] md:max-w-full mx-auto md:mx-0 mt-[18px] md:mt-0  flex items-center justify-center md:justify-start text-[#666666] text-center md:text-start gap-[8px]'>
-                        <Image src={MongoDB} alt="" />
-                        <div className=' md:text-[19px] font-normal'>Start  Your project</div>
+                        <Image src={user} alt="" />
+                        <div className=' md:text-[19px] font-normal'>Serverless Storage</div>
                     </div>
 
                     <div className='max-w-[70%] md:max-w-full mx-auto md:mx-0 md:text-[20px]  mt-[16px] text-[18px] font-semibold '>
-                        100% Portable
-                        Built-in Auth with RLS
-                        Easily Extendable
-                        it&apos;s your launch day.
+                        Accelerate development
+                        with databases for the
+                        fastest frontends.
 
                     </div>
                 </div>

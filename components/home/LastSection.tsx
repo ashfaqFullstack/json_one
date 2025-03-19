@@ -2,17 +2,20 @@ import errow from "@/data/errow.svg"
 import circle from "@/data/circle.svg"
 import range from "@/data/range.svg"
 import Conformance from "@/data/conformance.svg"
-import firstman from "@/data/firstman.svg"
-import firstwoman from "@/data/firstwoman.svg"
-import firstgb from "@/data/firstbg.svg"
-import secondman1 from "@/data/secondman1.svg"
-import secondman2 from "@/data/secondman2.svg"
-import secondman3 from "@/data/secondman3.svg"
-import secondman4 from "@/data/secondman4.svg"
-import secondman5 from "@/data/secondman5.svg"
-import thirdwoman1 from "@/data/thirdwoman1.svg"
-import thirdwoman2 from "@/data/thirdwoman2.svg"
-import thirdwoman3 from "@/data/thirdwoman3.svg"
+import user1 from "@/data/user1.svg"
+import user2 from "@/data/user2.svg"
+import user3 from "@/data/user3.svg"
+import user4 from "@/data/user4.svg"
+import user5 from "@/data/user5.svg"
+import user6 from "@/data/user6.svg"
+import user7 from "@/data/user7.svg"
+import user8 from "@/data/user8.svg"
+import user9 from "@/data/user9.svg"
+import user10 from "@/data/user10.svg"
+import user11 from "@/data/user11.svg"
+
+
+
 import Image from "next/image"
 import { BsPlusLg } from "react-icons/bs"
 
@@ -55,14 +58,14 @@ function LastSection() {
 
                 {/* Arrow */}
 
-                <div className="relative h-[20vh]" >
+                <div className="relative h-[20vh] md:mt-3 mt-4" >
                     <Image src={circle} alt="Errow" className="absolute border border-[#e3dcdc] rounded-full p-[5px] w-[26px]  top-[44%] left-[50%] translate-x-[-50%] translate-y-[-50%] " />
                     <Image src={errow} alt="Errow" className="absolute top-[46%] left-[50%] translate-x-[-50%] translate-y-[-50%] " />
                 </div>
 
                 {/* box */}
 
-                <div className="flex !mt-[-16px] ml-auto w-fit gap-[26px] items-center rounded-[12px] shadow-md font-normal p-[13px] border-2 border-dashed border-[#e3dcdc]" >
+                <div className="flex !mt-[-2px] ml-auto w-fit gap-[26px] items-center rounded-[12px] shadow-md font-normal p-[13px] border-2 border-dashed border-[#e3dcdc]" >
                     {/* box first row  */}
                     <div>
                         <div className="flex justify-between  items-center text-[10px] md:text-[13px]  ">
@@ -70,7 +73,7 @@ function LastSection() {
                                 <span className="text-gray-300" >vercel-site/</span>jvjb4ynna
                             </div>
                             <div className="text-gray-300" >
-                                1d ago
+                                10d ago
                             </div>
                         </div>
                         {/* box second row */}
@@ -81,7 +84,7 @@ function LastSection() {
                         </div>
                     </div>
 
-                    <div className="text-[12px] md:text-[13px]" >90</div>
+                    <div className="text-[12px] md:text-[13px]" >55</div>
                 </div>
             </div>
 
@@ -89,7 +92,7 @@ function LastSection() {
 
             <div className=" col-span-12 md:col-span-6 px-[24px] md:px-[48px]" >
                 <div className="flex items-center gap-[8px]" >
-                    <Image src={circle} alt="Loading..." />
+                    <Image src={Conformance} alt="Loading..." />
                     Instant Rollbacks
                 </div>
 
@@ -120,25 +123,33 @@ function LastSection() {
                         <div className="bg-[#FAFAFA] flex-wrap py-[20px] mt-[16px] text-[11px] rounded-[6px] px-[12px] flex items-center justify-between" >
                             <div className="text-[#666666]" >@vercel/design</div>
                             <div className="flex" >
-                                <Image src={firstwoman} alt="Range" className="mr-[-10px]" />
-                                <Image src={firstwoman} alt="Range" className="mr-[-10px]" />
-                                <Image src={firstwoman} alt="Range" />
+                                <Image src={user1} alt="Range" className="mr-[-10px]" />
+                                <Image src={user2} alt="Range" className="mr-[-10px]" />
+                                <Image src={user3} alt="Range" className="mr-[-10px]" />
+
+
                             </div>
                         </div>
                         <div className="bg-[#FAFAFA] flex-wrap py-[20px] mt-[16px] text-[11px] rounded-[6px] px-[12px] flex items-center justify-between" >
                             <div className="text-[#666666]" >@vercel/eng</div>
                             <div className="flex" >
-                                <Image src={firstwoman} alt="Range" className="mr-[-10px]" />
-                                <Image src={firstwoman} alt="Range" className="mr-[-10px]" />
-                                <Image src={firstwoman} alt="Range" />
+                                <Image src={user4} alt="Range" className="mr-[-10px]" />
+                                <Image src={user5} alt="Range" className="mr-[-10px]" />
+                                <Image src={user6} alt="Range" className="mr-[-10px]" />
+                                <Image src={user7} alt="Range" className="mr-[-10px]" />
+                                <Image src={user8} alt="Range" className="mr-[-10px]" />
+
+
                             </div>
                         </div>
                         <div className="bg-[#FAFAFA] flex-wrap py-[20px] mt-[16px] text-[11px] rounded-[6px] px-[12px] flex items-center justify-between" >
                             <div className="text-[#666666]" >@vercel/marketing</div>
                             <div className="flex" >
-                                <Image src={firstwoman} alt="Range" className="mr-[-10px]" />
-                                <Image src={firstwoman} alt="Range" className="mr-[-10px]" />
-                                <Image src={firstwoman} alt="Range" />
+                                <Image src={user9} alt="Range" className="mr-[-10px]" />
+                                <Image src={user10} alt="Range" className="mr-[-10px]" />
+                                <Image src={user11} alt="Range" className="mr-[-10px]" />
+
+
                             </div>
                         </div>
                     </div>
