@@ -6,12 +6,17 @@ import WelcomeSign from "@/components/home/WelcomeSign"
 
 const page = () => {
   return (
-    <div className="bg-[white]">
-      {/* <Navbar />
-      <Herosection />
-      <Card />
-      <LastSection /> */}
-      <WelcomeSign />
+    <div className="">
+      {/* Header */}
+      {/* <Navbar /> */}
+
+      {/* Herosection  */}
+      <div className="max-w-[90%] mx-auto lg:max-w-[80%]" >
+        <Herosection />
+        <Card />
+        <LastSection />
+      </div>
+      {/* <WelcomeSign /> */}
     </div>
   )
 }
