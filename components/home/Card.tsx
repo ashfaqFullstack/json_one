@@ -14,7 +14,7 @@ function Card() {
             <div className=' grid grid-cols-12 items-center text-[black] md:text-start text-center  '>
                 {/* first row of content  */}
                 <div className=' md:col-span-4 col-span-12  lg:border-r border-[#e3dcdc] md:pr-[48px]  md:py-[148px]'>
-                    <div className='max-w-[70%] md:max-w-full mx-auto md:mx-0  flex items-center justify-center md:justify-start text-[#666666] text-center md:text-start gap-[8px]'>
+                    <div className='max-w-[70%] md:max-w-full mx-auto md:mx-0 mt-[58px] md:mt-0 flex items-center justify-center md:justify-start text-[#666666] text-center md:text-start gap-[8px]'>
                         <Image src={MongoDB} alt="" />
                         <div className=' md:text-[19px] font-normal'>Start  Your project</div>
                     </div>
@@ -28,7 +28,7 @@ function Card() {
                     </div>
                 </div>
                 <div className=' md:col-span-4 col-span-12   lg:border-r border-[#e3dcdc] px-[25px] lg:px-[48px]  md:py-[148px]'>
-                    <div className='max-w-[70%] md:max-w-full mx-auto md:mx-0  flex items-center justify-center md:justify-start text-[#666666] text-center md:text-start gap-[8px]'>
+                    <div className='max-w-[70%] md:max-w-full mx-auto md:mx-0 mt-[58px] md:mt-0 flex items-center justify-center md:justify-start text-[#666666] text-center md:text-start gap-[8px]'>
                         <Image src={MongoDB} alt="" />
                         <div className=' md:text-[19px] font-normal'>Start  Your project</div>
                     </div>
@@ -49,7 +49,7 @@ function Card() {
 
                 {/* second row of content */}
                 <div className=' md:col-span-4 col-span-12  lg:border-r border-[#e3dcdc] md:pr-[48px]  md:py-[48px]'>
-                    <div className='max-w-[70%] md:max-w-full mx-auto md:mx-0  flex items-center justify-center md:justify-start text-[#666666] text-center md:text-start gap-[8px]'>
+                    <div className='max-w-[70%] md:max-w-full mx-auto md:mx-0 mt-[18px] md:mt-0  flex items-center justify-center md:justify-start text-[#666666] text-center md:text-start gap-[8px]'>
                         <Image src={MongoDB} alt="" />
                         <div className=' md:text-[19px] font-normal'>Start  Your project</div>
                     </div>
@@ -63,7 +63,7 @@ function Card() {
                     </div>
                 </div>
                 <div className=' md:col-span-4 col-span-12   lg:border-r border-[#e3dcdc] px-[25px] lg:px-[48px]  md:py-[48px]'>
-                    <div className='max-w-[70%] md:max-w-full mx-auto md:mx-0  flex items-center justify-center md:justify-start text-[#666666] text-center md:text-start gap-[8px]'>
+                    <div className='max-w-[70%] md:max-w-full mx-auto md:mx-0 mt-[58px] md:mt-0  flex items-center justify-center md:justify-start text-[#666666] text-center md:text-start gap-[8px]'>
                         <Image src={MongoDB} alt="" />
                         <div className=' md:text-[19px] font-normal'>Start  Your project</div>
                     </div>
@@ -77,7 +77,7 @@ function Card() {
                     </div>
                 </div>
                 <div className=' md:col-span-4 col-span-12   lg:border-r border-[#e3dcdc] px-[25px] lg:px-[48px]  md:py-[48px]'>
-                    <div className='max-w-[70%] md:max-w-full mx-auto md:mx-0  flex items-center justify-center md:justify-start text-[#666666] text-center md:text-start gap-[8px]'>
+                    <div className='max-w-[70%] md:max-w-full mx-auto md:mx-0 mt-[58px] md:mt-0  flex items-center justify-center md:justify-start text-[#666666] text-center md:text-start gap-[8px]'>
                         <Image src={MongoDB} alt="" />
                         <div className=' md:text-[19px] font-normal'>Start  Your project</div>
                     </div>
