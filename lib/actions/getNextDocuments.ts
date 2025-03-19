@@ -2,7 +2,8 @@
 
 import { auth } from "@/auth";
 import { GetDocumentsResponse } from "@/lib/actions/getDocuments";
-import { buildDocuments, userAllowedInRoom } from "@/lib/utils";
+import { userAllowedInRoom } from "@/lib/utils/userAllowedInRooms";
+import { buildDocuments } from "@/lib/utils/buildDocuments";
 import { liveblocks } from "@/liveblocks.server.config";
 
 type Props = {

@@ -13,7 +13,7 @@ import {
 import { DOCUMENT_URL } from "@/constants";
 import { DeleteIcon, MoreIcon } from "@/icons";
 import { useGroupsInfo } from "@/lib/hooks";
-import { getDocumentAccess } from "@/lib/utils";
+import { getDocumentAccess } from "@/lib/utils/getDocumentAccess";
 import { AvatarStack } from "@/primitives/AvatarStack";
 import { Button } from "@/primitives/Button";
 import { Popover } from "@/primitives/Popover";

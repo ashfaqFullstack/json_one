@@ -1,11 +1,10 @@
 "use server";
 
 import { auth } from "@/auth";
-import {
-  buildDocuments,
-  getDraftsGroupName,
-  userAllowedInRoom,
-} from "@/lib/utils";
+import { userAllowedInRoom } from "@/lib/utils/userAllowedInRooms";
+import { buildDocuments } from "@/lib/utils/buildDocuments";
+import { getDraftsGroupName } from "@/lib/utils/getDraftsGroupName";
+
 import { liveblocks } from "@/liveblocks.server.config";
 import { Document, DocumentGroup, DocumentType, DocumentUser } from "@/types";
 

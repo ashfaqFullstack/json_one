@@ -1,13 +1,15 @@
 "use server";
 
+
+// buildDocumentGroups,
+// documentAccessToRoomAccesses,
+// getDraftsGroupName,
 import { auth } from "@/auth";
 import { getGroup } from "@/lib/database/getGroup";
-import {
-  buildDocumentGroups,
-  documentAccessToRoomAccesses,
-  getDraftsGroupName,
-  userAllowedInRoom,
-} from "@/lib/utils";
+import { userAllowedInRoom } from "@/lib/utils/userAllowedInRooms";
+import { buildDocumentGroups } from "@/lib/utils/buildDocumentGroups";
+import { documentAccessToRoomAccesses } from "@/lib/utils/convertAccessType";
+import { getDraftsGroupName } from "@/lib/utils/getDraftsGroupName";
 import { liveblocks } from "@/liveblocks.server.config";
 import { Document, DocumentAccess, DocumentGroup } from "@/types";
 

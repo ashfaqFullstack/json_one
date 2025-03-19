@@ -1,7 +1,7 @@
 "use server";
 
 import { auth } from "@/auth";
-import { buildDocumentUsers } from "@/lib/utils";
+import { buildDocumentUsers } from "@/lib/utils/buildDocumentUsers";
 import { liveblocks } from "@/liveblocks.server.config";
 import { Document, DocumentUser } from "@/types";
 

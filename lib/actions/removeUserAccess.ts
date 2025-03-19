@@ -1,12 +1,14 @@
 "use server";
 
+
+// buildDocumentUsers,
+// isUserDocumentOwner,
 import { auth } from "@/auth";
 import { getUser } from "@/lib/database";
-import {
-  buildDocumentUsers,
-  isUserDocumentOwner,
-  userAllowedInRoom,
-} from "@/lib/utils";
+import { userAllowedInRoom } from "@/lib/utils/userAllowedInRooms";
+import { buildDocumentUsers } from "@/lib/utils/buildDocumentUsers";
+import { isUserDocumentOwner } from "@/lib/utils/isUserDocumentOwner";
+
 import { liveblocks } from "@/liveblocks.server.config";
 import { Document, DocumentUser } from "@/types";
 

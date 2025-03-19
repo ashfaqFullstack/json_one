@@ -5,10 +5,9 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Menu } from "lucide-react";
-import { Card } from "@/components/ui/card";
-// import ThemeToggle from "@/components/theme-toggle";
+
 import { Button } from "@/components/ui/button";
-// import ShadcnKit from "@/components/icons/shadcn-kit";
+
 import { nanoid } from "nanoid";
 import Link from "next/link";
 import Image from "next/image";
@@ -20,8 +19,7 @@ import { landings } from "@/data/navbar";
 const Navbar = () => {
   return (
     <div className=" rounded-none !h-[64px] bg-[#FAFAFA] text-[black] px-[20px] md:px-[15px] lg:px-[20px] border-0 flex flex-row items-center justify-between ">
-      {/* <ShadcnKit className="text-primary cursor-pointer" /> */}
-      {/* <Image src={Logo} alt="jsonone" className="!block md:!hidden" /> */}
+    
       <div className="flex justify-center items-center" >
         <Image src={Logo} alt="jsonone" className="mr-[10px] lg:mr-[35px]" />
         <ul className="hidden md:flex items-center gap-[15px] lg:gap-[24px] py-[17px] ">

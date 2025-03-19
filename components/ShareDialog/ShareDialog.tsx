@@ -12,7 +12,7 @@ import {
   getDocumentUsers,
 } from "@/lib/actions";
 import { useDocumentsFunctionSWR, useInitialDocument } from "@/lib/hooks";
-import { getDocumentAccess } from "@/lib/utils";
+import { getDocumentAccess } from "@/lib/utils/getDocumentAccess";
 import { Dialog } from "@/primitives/Dialog";
 import { DocumentAccess } from "@/types";
 import { ShareDialogDefault } from "./ShareDialogDefault";

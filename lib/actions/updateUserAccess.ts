@@ -2,13 +2,11 @@
 
 import { auth } from "@/auth";
 import { getUser } from "@/lib/database/getUser";
-import {
-  buildDocument,
-  buildDocumentUsers,
-  documentAccessToRoomAccesses,
-  isUserDocumentOwner,
-  userAllowedInRoom,
-} from "@/lib/utils";
+import { userAllowedInRoom } from "@/lib/utils/userAllowedInRooms";
+import { buildDocument } from "@/lib/utils/buildDocuments";
+import { buildDocumentUsers } from "@/lib/utils/buildDocumentUsers";
+import { documentAccessToRoomAccesses } from "@/lib/utils/convertAccessType";
+import { isUserDocumentOwner } from "@/lib/utils/isUserDocumentOwner";
 import { liveblocks } from "@/liveblocks.server.config";
 import { Document, DocumentAccess, DocumentUser } from "@/types";
 

@@ -1,6 +1,6 @@
 "use server";
 
-import { buildDocumentGroups } from "@/lib/utils";
+import { buildDocumentGroups } from "@/lib/utils/buildDocumentGroups";
 import { liveblocks } from "@/liveblocks.server.config";
 import { Document, DocumentGroup } from "@/types";
 

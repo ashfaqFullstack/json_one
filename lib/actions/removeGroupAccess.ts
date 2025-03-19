@@ -2,7 +2,9 @@
 
 import { auth } from "@/auth";
 import { getGroup } from "@/lib/database/getGroup";
-import { buildDocumentGroups, userAllowedInRoom } from "@/lib/utils";
+import { userAllowedInRoom } from "@/lib/utils/userAllowedInRooms";
+import { buildDocumentGroups } from "@/lib/utils/buildDocumentGroups";
+
 import { liveblocks } from "@/liveblocks.server.config";
 import { Document, DocumentGroup } from "@/types";
 

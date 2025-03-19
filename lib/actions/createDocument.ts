@@ -5,7 +5,8 @@ import { nanoid } from "nanoid";
 import { redirect } from "next/navigation";
 import { auth } from "@/auth";
 import { DOCUMENT_URL } from "@/constants";
-import { buildDocument, getDraftsGroupName } from "@/lib/utils";
+import {  getDraftsGroupName } from "@/lib/utils/getDraftsGroupName";
+import { buildDocument } from "@/lib/utils/buildDocuments";
 import { liveblocks } from "@/liveblocks.server.config";
 import {
   Document,

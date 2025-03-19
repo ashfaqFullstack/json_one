@@ -1,7 +1,8 @@
 "use server";
 
 import { auth } from "@/auth";
-import { buildDocument, userAllowedInRoom } from "@/lib/utils";
+import { buildDocument } from "@/lib/utils/buildDocuments";
+import { userAllowedInRoom } from "@/lib/utils/userAllowedInRooms"
 import { liveblocks } from "@/liveblocks.server.config";
 import { Document } from "@/types";
 
