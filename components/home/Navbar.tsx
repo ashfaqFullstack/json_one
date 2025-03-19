@@ -19,7 +19,7 @@ import { landings } from "@/data/navbar";
 
 const Navbar = () => {
   return (
-    <div className=" rounded-none !h-[64px] bg-[#FAFAFA] px-[20px] md:px-[15px] lg:px-[20px] border-0 flex flex-row items-center justify-between ">
+    <div className=" rounded-none !h-[64px] bg-[#FAFAFA] text-[black] px-[20px] md:px-[15px] lg:px-[20px] border-0 flex flex-row items-center justify-between ">
       {/* <ShadcnKit className="text-primary cursor-pointer" /> */}
       {/* <Image src={Logo} alt="jsonone" className="!block md:!hidden" /> */}
       <div className="flex justify-center items-center" >
@@ -167,7 +167,7 @@ const Navbar = () => {
                       <span className="">Resources</span>
                       <Image src={Chevron} alt="chevron" />
                     </div>
-                     </DropdownMenuTrigger>
+                  </DropdownMenuTrigger>
 
                   <DropdownMenuContent className={style.dropdown} align="start">
                     {landings.map((page) => (
