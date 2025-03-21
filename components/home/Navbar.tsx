@@ -19,7 +19,7 @@ import { landings } from "@/data/navbar";
 const Navbar = () => {
   return (
     <div className=" rounded-none !h-[64px] bg-[#FAFAFA] text-[black] px-[20px] md:px-[15px] lg:px-[20px] border-0 flex flex-row items-center justify-between ">
-    
+
       <div className="flex justify-center items-center" >
         <Image src={Logo} alt="jsonone" className="mr-[10px] lg:mr-[35px]" />
         <ul className="hidden md:flex items-center gap-[15px] lg:gap-[24px] py-[17px] ">
@@ -91,12 +91,16 @@ const Navbar = () => {
         <Button variant="default"
           className={`${style.gray_button} hidden md:block !h-[32px] !px-[12px]  !rounded-[6px] !mx-[10px]`}
         >
-          Login
+          <Link href="login">
+            Login
+          </Link>
         </Button>
         <div
           className={`${style.button_dark} !h-[32px] hidden md:block`}
         >
-          Sign Up
+          <Link href="/signup">
+            Sign Up
+          </Link>
         </div>
 
         <div className="flex md:hidden mr-2 items-center gap-2">
@@ -189,6 +193,7 @@ const Navbar = () => {
                 <Button variant="default"
                   className={` ${style.gray_button}  !h-[32px] !px-[12px]  !rounded-[6px]`}
                 >
+
                   Login
                 </Button>
               </DropdownMenuItem>

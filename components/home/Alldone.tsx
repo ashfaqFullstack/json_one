@@ -1,4 +1,3 @@
-import React from 'react'
 import downerrow from '@/data/downerrow.svg'
 import geo from '@/data/geo.svg'
 import Image from 'next/image'
@@ -6,13 +5,8 @@ import done from '@/data/done.svg'
 import mobigift from '@/data/mobgift.svg'
 import mobilogo from '@/data/mobilogo.svg'
 import plus from '@/data/plus.svg'
-import Link from 'next/link'
-
-
-
-function Verifyemail() {
+function Alldone() {
     return (
-
         <div className=" grid grid-cols-12">
 
             <div className="md:col-span-6 col-span-12 bg-[black]">
@@ -99,23 +93,20 @@ function Verifyemail() {
                 </div>
 
                 <div className='text-[black] md:my-[230px]  xl:mx-[150px] lg:mx-[80px] md:mx-[150px]    mx-5 '>
-                    <div className='md:text-[28px] text-[25px] font-semibold'>Verify your email</div>
-                    <div className='text-[14] font-normal'>We have sent a verification email to <span className=' font-bold'>  info@jsonone.com. </span> Please check your email for further instructions.</div>
-                    <div className="bg-[black] flex md:w-[25%] justify-center rounded-[4px] mt-[24px] py-[12px]  ">
+                    <div className='md:text-[28px] text-[25px] font-semibold'>You’re all set!</div>
+                    <div className='text-[14] font-normal mt-[8px]'>Your account has been successfully set up..</div>
+
+
+
+                    <div className="bg-[black] flex md:w-[45%] justify-center rounded-[4px] mt-[24px] py-[12px]  ">
                         <Image src={plus} alt="done" />
-                        <div className="text-[14px] font-medium text-[white]">
-                            <Link href='otpnumber'>
-                                Back
-                            </Link>
-                        </div>
+                        <div className="text-[14px] font-medium text-[white]">Proceed to Jsonone </div>
                     </div>
 
                 </div>
 
             </div>
-        </div>
-
-    )
+        </div>)
 }
 
-export default Verifyemail
+export default Alldone

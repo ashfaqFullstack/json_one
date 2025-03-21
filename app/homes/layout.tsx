@@ -4,7 +4,7 @@ import { ReactNode } from "react";
 
 export default async function Dashboard({ children }: { children: ReactNode }) {
     return (
-        <div className="">
+        <div className="bg-[white]">
             <Navbar />
             {children}
         </div>
