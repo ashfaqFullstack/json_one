@@ -54,7 +54,7 @@ function ResetPassword() {
                                 Use phone number instead
                             </Link>
                         </div>
-                        <div className="bg-[black] flex md:w-[30%] justify-center rounded-[4px] mt-[24px] py-[12px]  ">
+                        <div className="bg-[black] flex md:w-[35%] justify-center rounded-[4px] mt-[24px] py-[12px]  ">
                             <Image src={plus} alt="done" />
                             <div className="text-[14px] font-medium text-[white]">
                                 <Link href="/login/resetpassord/passwordupdate">
