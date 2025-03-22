@@ -1,6 +1,5 @@
 "use client"
 import Image from 'next/image'
-import logojson from '@/data/logojson.svg'
 import plus from '@/data/plus.svg'
 import {
     InputOTP,

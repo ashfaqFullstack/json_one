@@ -1,11 +1,6 @@
 import Image from "next/image"
-import done from '@/data/done.svg'
 import downerrow from '@/data/downerrow.svg'
 import geo from '@/data/geo.svg'
-import mobigift from '@/data/mobgift.svg'
-import mobilogo from '@/data/mobilogo.svg'
-import plus from '@/data/plus.svg'
-import Link from "next/link"
 import FormSideContent from "./FormSideContent"
 import VerifyPhone from "./Forms/VerifyPhone"
 

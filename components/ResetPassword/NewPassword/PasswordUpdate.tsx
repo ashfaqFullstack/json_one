@@ -1,13 +1,6 @@
-import React from 'react'
-import downerrow from '@/data/downerrow.svg'
-import geo from '@/data/geo.svg'
 import Image from 'next/image'
-import done from '@/data/done.svg'
 import plus from '@/data/plus.svg'
 import logojson from '@/data/logojson.svg'
-import mobilogoblack from '@/data/mobilogoblack.svg'
-import mobigiftblack from '@/data/mobigiftblack.svg'
-import righterrow from '@/data/righterrow.svg'
 import backgroundImage from '@/data/bg-img.svg'
 import Link from 'next/link'
 import Header from '@/components/Signin/Header'
@@ -21,7 +14,7 @@ function PasswordUpdate() {
             backgroundRepeat: 'no-repeat'
         }}>
             <Header />
-            
+
 
             <div className=' max-w-[480px] xl:py-[100] mx-auto lg:py-[80px] md:py-[70px] pt-15'>
 

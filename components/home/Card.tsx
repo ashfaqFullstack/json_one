@@ -1,11 +1,9 @@
-import pic from '@/data/mongodbicon.svg'
 import Image from 'next/image'
 import MongoDB from '@/data/mongodb.svg'
 import { BsPlusLg } from "react-icons/bs";
 import edgefunction from '@/data/edge_function.svg'
 import golbal from '@/data/global_perf.svg'
 import user from '@/data/userId.svg'
-import sarvar from '@/data/sarvar.svg'
 
 
 

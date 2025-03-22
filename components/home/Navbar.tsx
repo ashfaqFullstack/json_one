@@ -8,7 +8,6 @@ import { Menu } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 
-import { nanoid } from "nanoid";
 import Link from "next/link";
 import Image from "next/image";
 import Logo from '@/data/JsononeLogo.svg'

@@ -13,9 +13,6 @@ import user8 from "@/data/user8.svg"
 import user9 from "@/data/user9.svg"
 import user10 from "@/data/user10.svg"
 import user11 from "@/data/user11.svg"
-
-
-
 import Image from "next/image"
 import { BsPlusLg } from "react-icons/bs"
 
