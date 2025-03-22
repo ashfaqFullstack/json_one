@@ -8,6 +8,7 @@ import "@liveblocks/react-ui/styles/dark/media-query.css";
 import "@liveblocks/react-tiptap/styles.css";
 import "../styles/globals.css";
 import "../styles/text-editor.css";
+import ProtectedSite from "@/components/home/ProtectedSite";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,7 +25,9 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Providers session={session}>{children}</Providers>
+        <ProtectedSite>
+          <Providers session={session}>{children}</Providers>
+        </ProtectedSite>
       </body>
     </html>
   );
