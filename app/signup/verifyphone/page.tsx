@@ -1,7 +1,7 @@
-import OTPNumber from "@/components/home/OTPNumber"
+import VerifyNumber from "@/components/Signup/VerifyNumber"
 const page = () => {
     return (
-        <OTPNumber />
+        <VerifyNumber />
     )
 }
 

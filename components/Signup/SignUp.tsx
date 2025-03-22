@@ -25,6 +25,7 @@ import Logo from '@/data/JsononeLogo.svg'
 import style from './form.module.css'
 import righterrow from '@/data/righterrow.svg'
 import FormSideContent from './FormSideContent'
+import Signup from './Forms/Signup'
 
 
 function SignUp() {
@@ -125,91 +126,9 @@ function SignUp() {
                                     </span>
                                 </Link>
                             </div>
-                            <div className="md:flex w-full gap-4 lg:gap-[4px]  md:pr-[16px] lg:pr-0  mt-[24px]   ">
-                                <div className="border border-[#666666] rounded-[4px] md:w-[50%] py-[12px] px-[16px]">
-                                    <input type="text" name="" id="" className=" outline-none " placeholder="First Name " />
-                                </div>
-                                <div className="border border-[#666666] rounded-[4px] md:w-[50%] py-[12px] px-[16px] md:mt-0 mt-3">
-                                    <input type="text" name="" id="" className=" outline-none  " placeholder="Last Name " />
-                                </div>
 
-                            </div>
-                            {/* Second Input */}
-                            <div className="flex justify-between px-[16px] mt-[16px]  py-[12px]   text-[black] border border-[#666666]  ">
-                                <div>Country</div>
-                                <DropdownMenu>
-                                    <DropdownMenuTrigger asChild>
-                                        <div className="flex items-center gap-2 cursor-pointer text-[black]" >
-                                            <Image src={Chevron} alt="chevron" className='w-[20px] h-[20px]' />
-                                        </div>
-                                    </DropdownMenuTrigger>
+                            <Signup />
 
-                                    <DropdownMenuContent className={style.dropdown} align="start">
-                                        {country.map((page) => (
-                                            <DropdownMenuItem key={page.id}>
-                                                <div>{page.title}</div>
-                                            </DropdownMenuItem>
-                                        ))}
-                                    </DropdownMenuContent>
-                                </DropdownMenu>
-                            </div>
-                            {/* Third Input */}
-
-                            <div className="flex  mt-[16px] gap-6 ">
-                                <div className="flex justify-center gap-[16px] px-[16px] py-[12px]  border border-[#666666] rounded-[4px]  " >
-                                    <DropdownMenu>
-                                        <DropdownMenuTrigger asChild>
-                                            <div className="flex items-center gap- cursor-pointer " >
-                                                <div className="text-[14px] font-normal text-[black]">+254</div>
-
-                                                <Image src={Chevron} alt="chevron" />
-
-                                            </div>
-                                        </DropdownMenuTrigger>
-
-                                        <DropdownMenuContent className={style.dropdown} align="start">
-                                            {phone.map((page) => (
-                                                <DropdownMenuItem key={page.id}>
-                                                    <div>{page.title}</div>
-                                                </DropdownMenuItem>
-                                            ))}
-                                        </DropdownMenuContent>
-                                    </DropdownMenu>
-                                </div>
-                                <div className="border border-[#666666] rounded-[4px] py-[12px] px-[16px] w-full">
-                                    <input type="text" name="" className=" outline-none text-[black] w-full" id="" placeholder="Phone Number" />
-                                </div>
-                            </div>
-
-
-                            <div className=" text-[black] text-[12px] font-normal mt-[8px]">Make sure you enter the phone number you can always access. It will be used to verify your identity any time you sign in on a new device or web browser. Messaging or data rates may apply.</div>
-                            <div className="mt-[16px]">
-                                <div className="border border-[#666666] rounded-[4px] py-[12px] px-[16px]">
-                                    <input type="text" placeholder="Email " className=" w-full outline-none" />
-                                </div>
-
-                            </div>
-                            <div className="mt-[8px] text-[12px]  font-normal text-[black]">This will be your new Jsonone ID</div>
-                            <div className=" flex justify-between border border-[#666666] rounded-[4px] py-[12px] px-[16px]">
-                                <input type="text" name="" id="" placeholder="Password" className=" w-full outline-none" />
-                                <Image src={eye} alt="done" />
-                            </div>
-                            <div className=" flex justify-between border border-[#666666] rounded-[4px] py-[12px] px-[16px] mt-[16px]">
-                                <input type="text" name="" id="" placeholder="Confirim Password" className=" w-full outline-none" />
-                                <Image src={eye} alt="done" />
-                            </div>
-                            <div className="text-[black] text-[12px] font-simibold mt-[8px]">
-                                At least 8 characters long, must contain numbers, uppercase and lowercase letters
-                            </div>
-                            {/* ======Button====== */}
-                            <Link href='/signup/verifyemail'>
-                                <div className="bg-[black] flex md:w-[30%] justify-center rounded-[4px] mt-[24px] py-[12px]  ">
-                                    <Image src={plus} alt="done" />
-                                    <div className="text-[14px] font-medium text-[white]">
-                                        Sign Up
-                                    </div>
-                                </div>
-                            </Link>
                         </div>
 
                     </div>

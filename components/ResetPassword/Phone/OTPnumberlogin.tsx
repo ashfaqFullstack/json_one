@@ -1,31 +1,35 @@
-import Image from "next/image"
-import done from '@/data/done.svg'
 import downerrow from '@/data/downerrow.svg'
 import geo from '@/data/geo.svg'
-import mobigift from '@/data/mobgift.svg'
-import mobilogo from '@/data/mobilogo.svg'
+import Image from 'next/image'
 import plus from '@/data/plus.svg'
-import Link from "next/link"
-import FormSideContent from "./FormSideContent"
+import logojson from '@/data/logojson.svg'
+import righterrow from '@/data/righterrow.svg'
+import Link from 'next/link'
+import backgroundImage from '@/data/bg-img.svg'
+import OTPResetPass from '../Forms/OTPResetPass'
+import Header from '@/components/Signin/Header'
 
-function OTPNumber() {
+function OTPnumberlogin() {
     return (
-        <div className=" grid grid-cols-12 bg-[black] p-[20px]">
+        <div className="h-fit  w-full min-h-[100vh] bg-[#f9f6f6] " style={{
+            backgroundImage: `url(${backgroundImage.src})`,
+            backgroundSize: "50%",
+            backgroundPosition: 'left',
+            backgroundRepeat: 'no-repeat'
+        }}>
 
-            <FormSideContent />
+            <Header />
 
 
-            <div className='bg-[white] md:col-span-6 xl:max-w-[90vh] col-span-12 rounded-[12px]'>
+            <div className=' max-w-[480px] xl:py-[100] mx-auto lg:py-[80px] md:py-[70px] pt-15'>
 
-                <div className="flex  justify-end items-center py-4 px-4  gap-[5px] text-[black]">
-                    <Image src={geo} alt="done" />
-                    <div>EN</div>
-                    <Image src={downerrow} alt="done" />
-                </div>
-
-                <div className='text-[black] md:my-[230px]  xl:mx-[150px] lg:mx-[80px] md:mx-[150px]    mx-5 '>
-                    <div className='md:text-[28px] text-[25px] font-semibold'>Verify your phone</div>
-                    <div className='text-[14] font-normal mt-[8px]'>We have sent an SMS with a code to <span className="font-bold">+372 5687413 </span> . Please enter the code below to verify your number..</div>
+                <div className='  rounded-[12px] bg-[white]  px-[40px]  text-[black] py-[40px]'>
+                    <OTPResetPass />
+                    {/* <div className='flex gap-[10px]'>
+                        <Image src={logojson} alt="done" />
+                    </div>
+                    <div className='md:text-[28px] mt-[64px] text-[25px] font-semibold'>Enter the code </div>
+                    <div className='text-[14px] text-[rgba(0,0,0,0.6)] font-normal mt-[8px]'>We have sent an SMS with a code to <span className="font-bold">+372 5687413 </span> . Please enter the code below to verify your number..</div>
                     <div className="text-[14px] font-normal text-[#00000059] mt-[8px]">Resend code in 58s</div>
 
                     <div className="flex  items-center ">
@@ -53,20 +57,21 @@ function OTPNumber() {
 
 
 
-                    <Link href='/signup/allset'>
-                        <div className="bg-[black] flex md:w-[25%] justify-center rounded-[4px] mt-[24px] py-[12px]  ">
+                    <Link href='/signin/resetpassword/phone/newpassword'>
+                        <div className="bg-[black] flex md:w-[32%] justify-center rounded-[4px] mt-[24px] py-[12px]  ">
                             <Image src={plus} alt="done" />
                             <div className="text-[14px] font-medium text-[white]">
-                                Confirm
+                                Confirm Code
                             </div>
                         </div>
-                    </Link>
+                    </Link> */}
 
                 </div>
 
             </div>
+
         </div>
     )
 }
 
-export default OTPNumber
+export default OTPnumberlogin

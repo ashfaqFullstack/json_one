@@ -1,4 +1,4 @@
-import OTPnumberlogin from "@/components/home/OTPnumberlogin"
+import OTPnumberlogin from "@/components/ResetPassword/Phone/OTPnumberlogin"
 
 const page = () => {
     return (

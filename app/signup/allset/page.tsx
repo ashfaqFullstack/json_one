@@ -1,4 +1,4 @@
-import Alldone from "@/components/home/Alldone"
+import Alldone from "@/components/Signup/Alldone"
 
 const page = () => {
     return (

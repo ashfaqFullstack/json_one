@@ -1,4 +1,4 @@
-import PasswordResetDone from "@/components/home/PasswordResetDone"
+import PasswordResetDone from "@/components/ResetPassword/Email/PasswordResetDone"
 
 const page = () => {
     return (

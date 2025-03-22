@@ -19,13 +19,13 @@ import user11 from "@/data/user11.svg"
 import Image from "next/image"
 import { BsPlusLg } from "react-icons/bs"
 
-function LastSection() {
+function Footer() {
     return (
         <div className="grid grid-cols-12 mt-[60px] md:mt-0 relative border-b border-[#e3dcdc]" >
             <BsPlusLg className='absolute top-0 left-0 translate-x-[-50%] translate-y-[-50%] text-[#A8A8A8] text-[32px]' />
 
             <div className="col-span-12 md:col-span-6 relative md:border-r border-[#e3dcdc] p-[24px] md:p-[48px]" >
-                <div className="flex items-center gap-[8px]" >
+                <div className="flex text-[#666666] items-center gap-[8px]" >
                     <Image src={circle} alt="Loading..." />
                     Instant Rollbacks
                 </div>
@@ -91,9 +91,9 @@ function LastSection() {
             {/* Conformance */}
 
             <div className=" col-span-12 md:col-span-6 p-[24px] md:p-[48px]" >
-                <div className="flex items-center gap-[8px]" >
+                <div className="flex text-[#666666] items-center gap-[8px]" >
                     <Image src={Conformance} alt="Loading..." />
-                    Instant Rollbacks
+                    Conformance
                 </div>
 
                 <div className="text-[18px] text-center md:text-start md:text-[20px] lg:text-[24px] mt-[16px]" >
@@ -159,4 +159,4 @@ function LastSection() {
     )
 }
 
-export default LastSection
+export default Footer

@@ -1,4 +1,4 @@
-import PasswordUpdate from "@/components/home/PasswordUpdate"
+import PasswordUpdate from "@/components/ResetPassword/NewPassword/PasswordUpdate"
 
 const page = () => {
     return (

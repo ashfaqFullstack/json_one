@@ -1,4 +1,4 @@
-import ResetPhoneNumber from "@/components/home/ResetPhoneNumber"
+import ResetPhoneNumber from "@/components/ResetPassword/Phone/ResetPhoneNumber"
 
 const page = () => {
     return (

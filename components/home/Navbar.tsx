@@ -95,13 +95,13 @@ const Navbar = () => {
             Login
           </Button>
         </Link>
-        <div
-          className={`${style.button_dark} !h-[32px] hidden md:block`}
-        >
-          <Link href="/signup">
+        <Link href="/signup">
+          <div
+            className={`${style.button_dark} !h-[32px] hidden md:block`}
+          >
             Sign Up
-          </Link>
-        </div>
+          </div>
+        </Link>
 
         <div className="flex md:hidden mr-2 items-center gap-2">
           {/* <DropdownMenu>
@@ -190,18 +190,22 @@ const Navbar = () => {
                 <div className={`${style.contact} `}>Contact</div>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Button variant="default"
-                  className={` ${style.gray_button}  !h-[32px] !px-[12px]  !rounded-[6px]`}
-                >
-                  Login
-                </Button>
+                <Link href="/signin">
+                  <Button variant="default"
+                    className={` ${style.gray_button}  !h-[32px] !px-[12px]  !rounded-[6px]`}
+                  >
+                    Login
+                  </Button>
+                </Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <div
-                  className={`${style.button_dark} !h-[32px] `}
-                >
-                  Sign Up
-                </div>
+                <Link href='/signup' >
+                  <div
+                    className={`${style.button_dark} !h-[32px] `}
+                  >
+                    Sign Up
+                  </div>
+                </Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
