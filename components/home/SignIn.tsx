@@ -26,8 +26,6 @@ function SignIn() {
         }}>
             <div>
                 <div className="relative flex justify-between md:p-[24px]">
-
-
                     <div className='flex gap-[7px] items-center'>
                         <Image src={righterrow} alt="done" />
                         <div className='text-[14px] font-medium text-[black]'>Back</div>
@@ -39,19 +37,23 @@ function SignIn() {
                         <div>EN</div>
                         <Image src={downerrow} alt="done" />
                     </div>
-
                 </div>
 
-                <div className=' xl:pt-[10%] lg:pt-[80px] md:pt-[70px] pt-15'>
+                <div className=' max-w-[480px] xl:py-[100] mx-auto lg:py-[80px] md:py-[70px] pt-15'>
 
-                    <div className=' xl:mx-[300px]  lg:mx-[150px] md:mx-[80px] mx-15  rounded-[12px] bg-[white]    text-[black] py-[40px]'>
+                    <div className='  rounded-[12px] bg-[white]    text-[black] py-[40px]'>
                         <div className='mx-[40px]'>
 
                             <div className='flex gap-[10px]'>
                                 <Image src={logojson} alt="done" />
                             </div>
                             <div className='text-[28px] font-semibold text-[black] mt-[64px]'>Sign in</div>
-                            <div className='text-[14px] font-normal mt-[9px] '>Don&apos;t have an account yet?<span className='font-bold'>Sign in</span></div>
+                            <div className='text-[14px] font-normal mt-[9px] '>
+                                Don&apos;t have an account yet?
+                                <Link href='/signup'>
+                                    <span className='font-bold'> Sign up</span>
+                                </Link>
+                            </div>
                             {/* Emial Input */}
                             <div className="border border-[#666666] rounded-[4px] py-[12px] px-[16px] mt-[24px]">
                                 <input type="text" placeholder="Email " className=" w-full outline-none"
@@ -66,19 +68,19 @@ function SignIn() {
 
                                 <Image src={eye} alt="done" />
                             </div>
-                            <div className='text-[14px] font-medium mt-[16px]'>
-                                <Link href="login/resetpassord">
+                            <Link href="/signin/resetpassword/email">
+                                <div className='text-[14px] font-medium mt-[16px]'>
                                     Forgot password?
-                                </Link>
-                            </div>
-                            <div className="bg-[black] flex md:w-[30%] justify-center rounded-[4px] mt-[24px] py-[12px]  ">
-                                <Image src={plus} alt="done" />
-                                <div className="text-[14px] font-medium text-[white]">
-                                    <Link href='/signup'>
-                                        Sign Up
-                                    </Link>
                                 </div>
-                            </div>
+                            </Link>
+                            <Link href='/home'>
+                                <div className="bg-[black] w-fit gap-[4px] flex px-[24px] justify-center rounded-[4px] mt-[24px] py-[12px]  ">
+                                    <Image src={plus} alt="done" />
+                                    <div className="text-[14px] font-medium text-[white]">
+                                        Sign In
+                                    </div>
+                                </div>
+                            </Link>
                         </div>
                     </div>
 

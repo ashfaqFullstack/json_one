@@ -90,7 +90,7 @@ function LastSection() {
 
             {/* Conformance */}
 
-            <div className=" col-span-12 md:col-span-6 px-[24px] md:px-[48px]" >
+            <div className=" col-span-12 md:col-span-6 p-[24px] md:p-[48px]" >
                 <div className="flex items-center gap-[8px]" >
                     <Image src={Conformance} alt="Loading..." />
                     Instant Rollbacks

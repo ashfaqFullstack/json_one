@@ -31,15 +31,14 @@ function OTPnumberlogin() {
                 </div>
             </div>
 
-            <div className=' xl:py-[100px] lg:py-[80px] md:py-[70px] py-15'>
+            <div className=' max-w-[480px] xl:py-[100] mx-auto lg:py-[80px] md:py-[70px] pt-15'>
 
-                <div className=' xl:mx-[400px] px-[40px]  lg:mx-[200px] md:mx-[80px] mx-15  rounded-[12px] bg-[white]  text-[black] py-[40px]'>
-
+                <div className='  rounded-[12px] bg-[white]  px-[40px]  text-[black] py-[40px]'>
                     <div className='flex gap-[10px]'>
                         <Image src={logojson} alt="done" />
                     </div>
                     <div className='md:text-[28px] mt-[64px] text-[25px] font-semibold'>Enter the code </div>
-                    <div className='text-[14] font-normal mt-[8px]'>We have sent an SMS with a code to <span className="font-bold">+372 5687413 </span> . Please enter the code below to verify your number..</div>
+                    <div className='text-[14px] text-[rgba(0,0,0,0.6)] font-normal mt-[8px]'>We have sent an SMS with a code to <span className="font-bold">+372 5687413 </span> . Please enter the code below to verify your number..</div>
                     <div className="text-[14px] font-normal text-[#00000059] mt-[8px]">Resend code in 58s</div>
 
                     <div className="flex  items-center ">
@@ -67,14 +66,14 @@ function OTPnumberlogin() {
 
 
 
-                    <div className="bg-[black] flex md:w-[32%] justify-center rounded-[4px] mt-[24px] py-[12px]  ">
-                        <Image src={plus} alt="done" />
-                        <div className="text-[14px] font-medium text-[white]">
-                            <Link href='/login/resetpassord/resetpasswordphone/resetotpnumber/newpassword'>
-                                Confirm
-                            </Link>
+                    <Link href='/signin/resetpassword/phone/newpassword'>
+                        <div className="bg-[black] flex md:w-[32%] justify-center rounded-[4px] mt-[24px] py-[12px]  ">
+                            <Image src={plus} alt="done" />
+                            <div className="text-[14px] font-medium text-[white]">
+                                Confirm Code
+                            </div>
                         </div>
-                    </div>
+                    </Link>
 
                 </div>
 

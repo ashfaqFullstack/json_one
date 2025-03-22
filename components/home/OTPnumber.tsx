@@ -53,14 +53,14 @@ function OTPNumber() {
 
 
 
-                    <div className="bg-[black] flex md:w-[25%] justify-center rounded-[4px] mt-[24px] py-[12px]  ">
-                        <Image src={plus} alt="done" />
-                        <div className="text-[14px] font-medium text-[white]">
-                            <Link href='/signup/allset'>
+                    <Link href='/signup/allset'>
+                        <div className="bg-[black] flex md:w-[25%] justify-center rounded-[4px] mt-[24px] py-[12px]  ">
+                            <Image src={plus} alt="done" />
+                            <div className="text-[14px] font-medium text-[white]">
                                 Confirm
-                            </Link>
+                            </div>
                         </div>
-                    </div>
+                    </Link>
 
                 </div>
 

@@ -88,13 +88,13 @@ const Navbar = () => {
 
       <div className="flex items-center py-[16px]">
         <div className={`${style.contact} hidden md:block`}>Contact</div>
-        <Button variant="default"
-          className={`${style.gray_button} hidden md:block !h-[32px] !px-[12px]  !rounded-[6px] !mx-[10px]`}
-        >
-          <Link href="login">
+        <Link href="/signin">
+          <Button variant="default"
+            className={`${style.gray_button} hidden md:block !h-[32px] !px-[12px]  !rounded-[6px] !mx-[10px]`}
+          >
             Login
-          </Link>
-        </Button>
+          </Button>
+        </Link>
         <div
           className={`${style.button_dark} !h-[32px] hidden md:block`}
         >
@@ -193,7 +193,6 @@ const Navbar = () => {
                 <Button variant="default"
                   className={` ${style.gray_button}  !h-[32px] !px-[12px]  !rounded-[6px]`}
                 >
-
                   Login
                 </Button>
               </DropdownMenuItem>

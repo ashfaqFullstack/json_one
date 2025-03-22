@@ -11,7 +11,7 @@ import Link from 'next/link'
 import righterrow from '@/data/righterrow.svg'
 import backgroundImage from '@/data/bg-img.svg'
 
-function NewPasswored() {
+function NewPassword() {
     return (
         <div className="h-fit  w-full min-h-[100vh] bg-[#f9f6f6] " style={{
             backgroundImage: `url(${backgroundImage.src})`,
@@ -33,9 +33,9 @@ function NewPasswored() {
                 </div>
             </div>
 
-            <div className=' xl:py-[100px] lg:py-[80px] md:py-[70px] py-15'>
+            <div className=' max-w-[480px] xl:py-[100] mx-auto lg:py-[80px] md:py-[70px] pt-15'>
 
-                <div className=' xl:mx-[400px]  lg:mx-[200px] md:mx-[80px] mx-15  rounded-[12px] bg-[white]    text-[black] py-[40px]'>
+                <div className='  rounded-[12px] bg-[white]    text-[black] py-[40px]'>
                     <div className='mx-[40px]'>
 
                         <div className='flex gap-[10px]'>
@@ -55,14 +55,14 @@ function NewPasswored() {
                             <Image src={eye} alt="done" />
                         </div>
                         <div className='text-[14px] font-medium mt-[16px] text-[#00000099]'>At least 8 characters long, must contain numbers, uppercase and lowercase letters</div>
-                        <div className="bg-[black] flex md:w-[50%] justify-center rounded-[4px] mt-[24px] py-[12px]  ">
-                            <Image src={plus} alt="done" />
-                            <div className="text-[14px] font-medium text-[white]">
-                                <Link href="/login/resetpassord/resetpasswordphone/resetotpnumber/newpassword/passwordupdate">
+                        <Link href="/signin/resetpassword/phone/passwordupdate">
+                            <div className="bg-[black] flex md:w-[50%] justify-center rounded-[4px] mt-[24px] py-[12px]  ">
+                                <Image src={plus} alt="done" />
+                                <div className="text-[14px] font-medium text-[white]">
                                     Create new password
-                                </Link>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                 </div>
 
@@ -71,4 +71,4 @@ function NewPasswored() {
         </div>)
 }
 
-export default NewPasswored
+export default NewPassword

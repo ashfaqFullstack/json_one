@@ -1,11 +1,8 @@
 import ResetPhoneNumber from "@/components/home/ResetPhoneNumber"
 
-
-function page() {
+const page = () => {
     return (
-        <div className="bg-[white]">
-            <ResetPhoneNumber />
-        </div>
+        <ResetPhoneNumber />
     )
 }
 

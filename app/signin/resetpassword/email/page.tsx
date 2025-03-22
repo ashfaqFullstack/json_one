@@ -1,10 +1,8 @@
 import ResetPassword from "@/components/home/ResetPassword"
 
-function page() {
+const page = () => {
     return (
-        <div className="bg-[white]">
-            <ResetPassword />
-        </div>
+        <ResetPassword />
     )
 }
 

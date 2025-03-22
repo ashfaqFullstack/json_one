@@ -1,11 +1,8 @@
 import PasswordUpdate from "@/components/home/PasswordUpdate"
 
-
-function page() {
+const page = () => {
     return (
-        <div className="bg-[white]">
-            <PasswordUpdate />
-        </div>
+        <PasswordUpdate />
     )
 }
 

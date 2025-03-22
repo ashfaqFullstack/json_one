@@ -6,6 +6,7 @@ import mobigift from '@/data/mobgift.svg'
 import mobilogo from '@/data/mobilogo.svg'
 import plus from '@/data/plus.svg'
 import FormSideContent from './FormSideContent'
+import Link from 'next/link'
 function Alldone() {
     return (
         <div className=" grid grid-cols-12 bg-[black] p-[20px]">
@@ -99,11 +100,12 @@ function Alldone() {
                     <div className='text-[14] font-normal mt-[8px]'>Your account has been successfully set up..</div>
 
 
-
-                    <div className="bg-[black] flex md:w-[45%] justify-center rounded-[4px] mt-[24px] py-[12px]  ">
-                        <Image src={plus} alt="done" />
-                        <div className="text-[14px] font-medium text-[white]">Proceed to Jsonone </div>
-                    </div>
+                    <Link href='/home' >
+                        <div className="bg-[black] flex gap-[4px] md:w-[45%] justify-center rounded-[4px] mt-[24px] py-[12px]  ">
+                            <Image src={plus} alt="done" />
+                            <div className="text-[14px] font-medium text-[white]">Proceed to Jsonone </div>
+                        </div>
+                    </Link>
 
                 </div>
 

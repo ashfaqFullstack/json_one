@@ -119,11 +119,11 @@ function SignUp() {
                             <div className="text-[28px] font-semibold text-[black]">Sign up</div>
                             <div className="text-[14px] font-normal text-[#666666]">
                                 Already have an account?
-                                <span className="text-[black] font-medium pl-2">
-                                    <Link href="/login">
+                                <Link href="/signin">
+                                    <span className="text-[black] font-medium pl-2">
                                         Sign in
-                                    </Link>
-                                </span>
+                                    </span>
+                                </Link>
                             </div>
                             <div className="md:flex w-full gap-4 lg:gap-[4px]  md:pr-[16px] lg:pr-0  mt-[24px]   ">
                                 <div className="border border-[#666666] rounded-[4px] md:w-[50%] py-[12px] px-[16px]">
@@ -202,14 +202,14 @@ function SignUp() {
                                 At least 8 characters long, must contain numbers, uppercase and lowercase letters
                             </div>
                             {/* ======Button====== */}
-                            <div className="bg-[black] flex md:w-[30%] justify-center rounded-[4px] mt-[24px] py-[12px]  ">
-                                <Image src={plus} alt="done" />
-                                <div className="text-[14px] font-medium text-[white]">
-                                    <Link href='/signup/verifyemail'>
+                            <Link href='/signup/verifyemail'>
+                                <div className="bg-[black] flex md:w-[30%] justify-center rounded-[4px] mt-[24px] py-[12px]  ">
+                                    <Image src={plus} alt="done" />
+                                    <div className="text-[14px] font-medium text-[white]">
                                         Sign Up
-                                    </Link>
+                                    </div>
                                 </div>
-                            </div>
+                            </Link>
                         </div>
 
                     </div>

@@ -33,9 +33,9 @@ function PasswordUpdate() {
                 </div>
             </div>
 
-            <div className=' xl:py-[100px] lg:py-[80px] md:py-[70px] py-15'>
+            <div className=' max-w-[480px] xl:py-[100] mx-auto lg:py-[80px] md:py-[70px] pt-15'>
 
-                <div className=' xl:mx-[400px]  lg:mx-[200px] md:mx-[80px] mx-15  rounded-[12px] bg-[white]    text-[black] py-[40px]'>
+                <div className='  rounded-[12px] bg-[white]    text-[black] py-[40px]'>
                     <div className='mx-[40px]'>
 
                         <div className='flex gap-[10px]'>
@@ -44,14 +44,14 @@ function PasswordUpdate() {
                         <div className='text-[28px] font-semibold text-[black] mt-[64px]'>Password updated</div>
                         <div className='text-[14px] font-normal mt-[9px] text-[#00000099] '>Your password has been updated successfully. You're all set to securely access your account with your new credentials.</div>
 
-                        <div className="bg-[black] flex md:w-[30%] justify-center rounded-[4px] mt-[24px] py-[12px]  ">
-                            <Image src={plus} alt="done" />
-                            <div className="text-[14px] font-medium text-[white]">
-                                <Link href='/login'>
+                        <Link href='/signin'>
+                            <div className="bg-[black] flex md:w-[30%] justify-center rounded-[4px] mt-[24px] py-[12px]  ">
+                                <Image src={plus} alt="done" />
+                                <div className="text-[14px] font-medium text-[white]">
                                     Sign in
-                                </Link>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                 </div>
 
