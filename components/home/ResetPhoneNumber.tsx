@@ -16,28 +16,31 @@ import {
     DropdownMenuItem,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { landings } from "@/data/navbar";
+import { landings, phone } from "@/data/constatns";
 import Chevron from '@/data/chevron_down.svg'
+import backgroundImage from '@/data/bg-img.svg'
+import style from './form.module.css'
+
 function ResetPhoneNumber() {
     return (
-        <div className="h- h-fit w-full bg-cover bg-center " style={{
-            backgroundImage: "url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221440%22%20height%3D%22900%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22skyblue%22%20%2F%3E%3Ccircle%20cx%3D%22720%22%20cy%3D%22450%22%20r%3D%22300%22%20fill%3D%22orange%22%20%2F%3E%3C%2Fsvg%3E')"
+        <div className="h-fit  w-full min-h-[100vh] bg-[#f9f6f6] " style={{
+            backgroundImage: `url(${backgroundImage.src})`,
+            backgroundSize: "50%",
+            backgroundPosition: 'left',
+            backgroundRepeat: 'no-repeat'
         }}>
-            <div className="  flex justify-between md:mx-[24px]">
-
-
+            <div className="relative flex justify-between md:p-[24px]">
                 <div className='flex gap-[7px] items-center'>
                     <Image src={righterrow} alt="done" />
                     <div className='text-[14px] font-medium text-[black]'>Back</div>
                 </div>
 
-                <Image src={logojson} alt="done" />
+                <Image src={logojson} className='absolute top-[20px] md:top-[48px] lg:top-[28px] xl:top-[18px] left-0 right-0 mx-auto' alt="done" />
                 <div className="flex items-center gap-[8px] text-[black]">
                     <Image src={geo} alt="done" />
                     <div>EN</div>
                     <Image src={downerrow} alt="done" />
                 </div>
-
             </div>
 
             <div className=' xl:py-[100px] lg:py-[80px] md:py-[70px] py-15'>
@@ -46,11 +49,10 @@ function ResetPhoneNumber() {
                     <div className='mx-[40px]'>
 
                         <div className='flex gap-[10px]'>
-                            <Image src={mobilogoblack} alt="done" />
-                            <Image src={mobigiftblack} alt="done" />
+                            <Image src={logojson} alt="done" />
                         </div>
                         <div className='text-[28px] font-semibold text-[black] mt-[64px]'>Reset password</div>
-                        <div className='text-[14px] font-normal mt-[9px] text-[#00000099] '>Enter your email address below, and we'll send you a link to reset your password.</div>
+                        <div className='text-[14px] font-normal mt-[9px] text-[#00000099] '>Enter your phone number, and we'll send you a link to reset your password.</div>
                         {/* Emial Input */}
                         <div className="flex  mt-[16px] gap-6 ">
                             <div className="flex justify-center gap-[16px] px-[16px] py-[12px]  border border-[#666666] rounded-[4px]  " >
@@ -64,10 +66,10 @@ function ResetPhoneNumber() {
                                         </div>
                                     </DropdownMenuTrigger>
 
-                                    <DropdownMenuContent align="start">
-                                        {landings.map((page) => (
+                                    <DropdownMenuContent className={style.dropdown} align="start">
+                                        {phone.map((page) => (
                                             <DropdownMenuItem key={page.id}>
-                                                <Link href={page.route}>{page.title}</Link>
+                                                <div>{page.title}</div>
                                             </DropdownMenuItem>
                                         ))}
                                     </DropdownMenuContent>
@@ -79,8 +81,9 @@ function ResetPhoneNumber() {
                         </div>
 
                         <div className='text-[14px] font-medium mt-[16px]'>
-
-                            Use phone number instead
+                            <Link href='/login/resetpassord' >
+                                Use email instead
+                            </Link>
                         </div>
                         <div className="bg-[black] flex md:w-[30%] justify-center rounded-[4px] mt-[24px] py-[12px]  ">
                             <Image src={plus} alt="done" />

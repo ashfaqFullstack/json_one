@@ -7,20 +7,21 @@ import mobigift from '@/data/mobgift.svg'
 import mobilogo from '@/data/mobilogo.svg'
 import plus from '@/data/plus.svg'
 import Link from 'next/link'
+import jsonlogo from '@/data/logojson.svg'
+import FormSideContent from './FormSideContent'
 
 
 
 function Verifyemail() {
     return (
 
-        <div className=" grid grid-cols-12">
-
-            <div className="md:col-span-6 col-span-12 bg-[black]">
+        <div className=" grid grid-cols-12 bg-[black] p-[20px] ">
+            <FormSideContent />
+            {/* <div className="md:col-span-6 col-span-12 bg-[black]">
                 <div className=" xl:ml-[16px] lg:ml-[50px] md:ml-[4px]  ml-4">
 
                     <div className=" flex md:mt-[106px]  mt-[50px] md:ml-0 ml-25 gap-[10px]">
-                        <Image src={mobilogo} alt="logo" />
-                        <Image src={mobigift} alt='mobilogo' />
+                        <Image src={jsonlogo} alt="done" />
                     </div>
                     <div className="md:text-[40px] text-[35px]  md:text-start text-center font-semibold  mt-[72px]">Launch in just Days</div>
                     <div className="md:text-[28px] text-[20px] md:text-start text-center font-normal mt-[24px] text-[#FFFFFF]">With AI Powered Workflows </div>
@@ -88,9 +89,9 @@ function Verifyemail() {
                     </div>
 
                 </div>
-            </div>
+            </div> */}
 
-            <div className=' md:col-span-6 col-span-12'>
+            <div className='bg-[white] md:col-span-6 col-span-12 rounded-[12px]'>
 
                 <div className="flex  justify-end items-center py-4 px-4  gap-[5px] text-[black]">
                     <Image src={geo} alt="done" />
@@ -104,7 +105,7 @@ function Verifyemail() {
                     <div className="bg-[black] flex md:w-[25%] justify-center rounded-[4px] mt-[24px] py-[12px]  ">
                         <Image src={plus} alt="done" />
                         <div className="text-[14px] font-medium text-[white]">
-                            <Link href='otpnumber'>
+                            <Link href='/signup/verifyphone'>
                                 Back
                             </Link>
                         </div>

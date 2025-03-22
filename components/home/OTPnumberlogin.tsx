@@ -7,76 +7,79 @@ import mobilogoblack from '@/data/mobilogoblack.svg'
 import mobigiftblack from '@/data/mobigiftblack.svg'
 import righterrow from '@/data/righterrow.svg'
 import Link from 'next/link'
+import backgroundImage from '@/data/bg-img.svg'
 
 function OTPnumberlogin() {
     return (
-        <div>
-            <div className="h- h-fit w-full bg-cover bg-center py-1 " style={{
-                backgroundImage: "url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221440%22%20height%3D%22900%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22skyblue%22%20%2F%3E%3Ccircle%20cx%3D%22720%22%20cy%3D%22450%22%20r%3D%22300%22%20fill%3D%22orange%22%20%2F%3E%3C%2Fsvg%3E')"
-            }}>
-                <div className="  flex justify-between md:mx-[24px]">
-
-
-                    <div className='flex gap-[7px] items-center'>
-                        <Image src={righterrow} alt="done" />
-                        <div className='text-[14px] font-medium text-[black]'>Back</div>
-                    </div>
-
-                    <Image src={logojson} alt="done" />
-                    <div className="flex items-center gap-[8px] text-[black]">
-                        <Image src={geo} alt="done" />
-                        <div>EN</div>
-                        <Image src={downerrow} alt="done" />
-                    </div>
-
+        <div className="h-fit  w-full min-h-[100vh] bg-[#f9f6f6] " style={{
+            backgroundImage: `url(${backgroundImage.src})`,
+            backgroundSize: "50%",
+            backgroundPosition: 'left',
+            backgroundRepeat: 'no-repeat'
+        }}>
+            <div className="relative flex justify-between md:p-[24px]">
+                <div className='flex gap-[7px] items-center'>
+                    <Image src={righterrow} alt="done" />
+                    <div className='text-[14px] font-medium text-[black]'>Back</div>
                 </div>
 
-                <div className=' '>
+                <Image src={logojson} className='absolute top-[20px] md:top-[48px] lg:top-[28px] xl:top-[18px] left-0 right-0 mx-auto' alt="done" />
+                <div className="flex items-center gap-[8px] text-[black]">
+                    <Image src={geo} alt="done" />
+                    <div>EN</div>
+                    <Image src={downerrow} alt="done" />
+                </div>
+            </div>
 
-                    <div className='text-[black]  md:mx-[450px]  md:my-[200px]  bg-[white] px-[40px] py-[40px]     mx-5 '>
-                        <div className='md:text-[28px] text-[25px] font-semibold'>Verify your phone</div>
-                        <div className='text-[14] font-normal mt-[8px]'>We have sent an SMS with a code to <span className="font-bold">+372 5687413 </span> . Please enter the code below to verify your number..</div>
-                        <div className="text-[14px] font-normal text-[#00000059] mt-[8px]">Resend code in 58s</div>
+            <div className=' xl:py-[100px] lg:py-[80px] md:py-[70px] py-15'>
 
-                        <div className="flex  items-center ">
-                            <div className="flex  gap-[8px] mt-[24px]">
-                                <div className="border border-[#00000033] rounded-[4px]">
-                                    <input type="text" className="w-12 h-16 text-center text-2xl border-2 border-gray-300 rounded-md focus:outline-none focus:border-blue-500" />
-                                </div>
-                                <div className="border border-[#00000033] rounded-[4px]">
-                                    <input type="text" className="w-12 h-16 text-center text-2xl border-2 border-gray-300 rounded-md focus:outline-none focus:border-blue-500" />
-                                </div>
-                                <div>
-                                    <div className="border border-[#00000033] rounded-[4px]">
-                                        <input type="text" className="w-12 h-16 text-center text-2xl border-2 border-gray-300 rounded-md focus:outline-none focus:border-blue-500" />
-                                    </div>
-                                </div>
-                                <div className="border border-[#00000033] rounded-[4px]">
-                                    <input type="text" className="w-12 h-16 text-center text-2xl border-2 border-gray-300 rounded-md focus:outline-none focus:border-blue-500" />
-                                </div>
-                                <div className="border border-[#00000033] rounded-[4px]">
-                                    <input type="text" className="w-12 h-16 text-center text-2xl border-2 border-gray-300 rounded-md focus:outline-none focus:border-blue-500" />
-                                </div>
+                <div className=' xl:mx-[400px] px-[40px]  lg:mx-[200px] md:mx-[80px] mx-15  rounded-[12px] bg-[white]  text-[black] py-[40px]'>
 
+                    <div className='flex gap-[10px]'>
+                        <Image src={logojson} alt="done" />
+                    </div>
+                    <div className='md:text-[28px] mt-[64px] text-[25px] font-semibold'>Enter the code </div>
+                    <div className='text-[14] font-normal mt-[8px]'>We have sent an SMS with a code to <span className="font-bold">+372 5687413 </span> . Please enter the code below to verify your number..</div>
+                    <div className="text-[14px] font-normal text-[#00000059] mt-[8px]">Resend code in 58s</div>
+
+                    <div className="flex  items-center ">
+                        <div className="flex  gap-[8px] mt-[24px]">
+                            <div className="border border-[#00000033] rounded-[4px]">
+                                <input type="text" className="w-12 h-16 text-center text-2xl border-2 border-gray-300 rounded-md focus:outline-none focus:border-blue-500" />
                             </div>
-                        </div>
-
-
-
-                        <div className="bg-[black] flex md:w-[32%] justify-center rounded-[4px] mt-[24px] py-[12px]  ">
-                            <Image src={plus} alt="done" />
-                            <div className="text-[14px] font-medium text-[white]">
-                                <Link href='/login/resetpassord/resetpasswordphone/resetotpnumber/newpassword'>
-                                    Confirm
-                                </Link>
+                            <div className="border border-[#00000033] rounded-[4px]">
+                                <input type="text" className="w-12 h-16 text-center text-2xl border-2 border-gray-300 rounded-md focus:outline-none focus:border-blue-500" />
                             </div>
-                        </div>
+                            <div>
+                                <div className="border border-[#00000033] rounded-[4px]">
+                                    <input type="text" className="w-12 h-16 text-center text-2xl border-2 border-gray-300 rounded-md focus:outline-none focus:border-blue-500" />
+                                </div>
+                            </div>
+                            <div className="border border-[#00000033] rounded-[4px]">
+                                <input type="text" className="w-12 h-16 text-center text-2xl border-2 border-gray-300 rounded-md focus:outline-none focus:border-blue-500" />
+                            </div>
+                            <div className="border border-[#00000033] rounded-[4px]">
+                                <input type="text" className="w-12 h-16 text-center text-2xl border-2 border-gray-300 rounded-md focus:outline-none focus:border-blue-500" />
+                            </div>
 
+                        </div>
+                    </div>
+
+
+
+                    <div className="bg-[black] flex md:w-[32%] justify-center rounded-[4px] mt-[24px] py-[12px]  ">
+                        <Image src={plus} alt="done" />
+                        <div className="text-[14px] font-medium text-[white]">
+                            <Link href='/login/resetpassord/resetpasswordphone/resetotpnumber/newpassword'>
+                                Confirm
+                            </Link>
+                        </div>
                     </div>
 
                 </div>
 
             </div>
+
         </div>
     )
 }

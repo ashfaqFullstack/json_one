@@ -5,11 +5,13 @@ import done from '@/data/done.svg'
 import mobigift from '@/data/mobgift.svg'
 import mobilogo from '@/data/mobilogo.svg'
 import plus from '@/data/plus.svg'
+import FormSideContent from './FormSideContent'
 function Alldone() {
     return (
-        <div className=" grid grid-cols-12">
+        <div className=" grid grid-cols-12 bg-[black] p-[20px]">
 
-            <div className="md:col-span-6 col-span-12 bg-[black]">
+            <FormSideContent />
+            {/* <div className="md:col-span-6 col-span-12 bg-[black]">
                 <div className=" xl:ml-[16px] lg:ml-[50px] md:ml-[4px]  ml-4">
 
                     <div className=" flex md:mt-[106px]  mt-[50px] md:ml-0 ml-25 gap-[10px]">
@@ -82,9 +84,9 @@ function Alldone() {
                     </div>
 
                 </div>
-            </div>
+            </div> */}
 
-            <div className=' md:col-span-6 col-span-12'>
+            <div className='bg-[white] md:col-span-6 xl:max-w-[90vh] col-span-12 rounded-[12px]'>
 
                 <div className="flex  justify-end items-center py-4 px-4  gap-[5px] text-[black]">
                     <Image src={geo} alt="done" />
@@ -92,8 +94,8 @@ function Alldone() {
                     <Image src={downerrow} alt="done" />
                 </div>
 
-                <div className='text-[black] md:my-[230px]  xl:mx-[150px] lg:mx-[80px] md:mx-[150px]    mx-5 '>
-                    <div className='md:text-[28px] text-[25px] font-semibold'>You’re all set!</div>
+                <div className='text-[black] md:my-[230px] ml-[15%] mx-5 '>
+                    <div className='md:text-[28px] text-[25px] font-semibold'>You&apos;re all set!</div>
                     <div className='text-[14] font-normal mt-[8px]'>Your account has been successfully set up..</div>
 
 

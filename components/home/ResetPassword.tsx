@@ -10,13 +10,17 @@ import mobigiftblack from '@/data/mobigiftblack.svg'
 import eye from '@/data/eye.svg'
 import Link from 'next/link'
 import righterrow from '@/data/righterrow.svg'
+import backgroundImage from '@/data/bg-img.svg'
 
 function ResetPassword() {
     return (
-        <div className="h- h-fit w-full bg-cover bg-center " style={{
-            backgroundImage: "url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%221440%22%20height%3D%22900%22%3E%3Crect%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22skyblue%22%20%2F%3E%3Ccircle%20cx%3D%22720%22%20cy%3D%22450%22%20r%3D%22300%22%20fill%3D%22orange%22%20%2F%3E%3C%2Fsvg%3E')"
+        <div className="h-fit  w-full min-h-[100vh] bg-[#f9f6f6] " style={{
+            backgroundImage: `url(${backgroundImage.src})`,
+            backgroundSize: "50%",
+            backgroundPosition: 'left',
+            backgroundRepeat: 'no-repeat'
         }}>
-            <div className="  flex justify-between md:mx-[24px]">
+            <div className="relative flex justify-between md:p-[24px]">
 
 
                 <div className='flex gap-[7px] items-center'>
@@ -24,7 +28,7 @@ function ResetPassword() {
                     <div className='text-[14px] font-medium text-[black]'>Back</div>
                 </div>
 
-                <Image src={logojson} alt="done" />
+                <Image src={logojson} className='absolute top-[20px] md:top-[48px] lg:top-[28px] xl:top-[18px] left-0 right-0 mx-auto' alt="done" />
                 <div className="flex items-center gap-[8px] text-[black]">
                     <Image src={geo} alt="done" />
                     <div>EN</div>
@@ -39,8 +43,7 @@ function ResetPassword() {
                     <div className='mx-[40px]'>
 
                         <div className='flex gap-[10px]'>
-                            <Image src={mobilogoblack} alt="done" />
-                            <Image src={mobigiftblack} alt="done" />
+                            <Image src={logojson} alt="Jsonone" />
                         </div>
                         <div className='text-[28px] font-semibold text-[black] mt-[64px]'>Reset password</div>
                         <div className='text-[14px] font-normal mt-[9px] text-[#00000099] '>Enter your email address below, and we'll send you a link to reset your password.</div>

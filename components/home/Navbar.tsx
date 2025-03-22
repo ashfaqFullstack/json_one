@@ -14,7 +14,7 @@ import Image from "next/image";
 import Logo from '@/data/JsononeLogo.svg'
 import Chevron from '@/data/chevron_down.svg'
 import style from './navbar.module.css'
-import { landings } from "@/data/navbar";
+import { landings } from "@/data/constatns";
 
 const Navbar = () => {
   return (

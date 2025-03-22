@@ -4,7 +4,7 @@ import Herosection from "@/components/home/Herosection"
 import LastSection from "@/components/home/LastSection"
 import Navbar from "@/components/home/Navbar"
 import NewPasswored from "@/components/home/NewPasswored"
-import OTPnumber from "@/components/home/OTPnumber"
+import OTPnumber from "@/components/home/OTPNumber"
 import PasswordResetSet from "@/components/home/PasswordResetSet"
 import PasswordUpdate from "@/components/home/PasswordUpdate"
 import ResetPassword from "@/components/home/ResetPassword"
@@ -20,9 +20,6 @@ const page = () => {
     <>
       <div className="">
         {/* Header */}
-
-
-        Herosection
         <div className="max-w-[90%] mx-auto lg:max-w-[80%] bg-[white] text-[black]" >
           <Herosection />
           <Card />

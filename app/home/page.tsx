@@ -8,7 +8,7 @@ const page = () => {
   return (
     <div className="">
       {/* Header */}
-      {/* <Navbar /> */}
+      <Navbar />
 
       {/* Herosection  */}
       <div className="max-w-[90%] mx-auto lg:max-w-[80%]" >

@@ -1,4 +1,4 @@
-import OTPnumber from "@/components/home/OTPnumber"
+import OTPnumber from "@/components/home/OTPNumber"
 import OTPnumberlogin from "@/components/home/OTPnumberlogin"
 
 function page() {
