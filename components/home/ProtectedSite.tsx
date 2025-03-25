@@ -35,7 +35,7 @@ const ProtectedSite = ({ children }: { children: React.ReactNode }) => {
         return (
             <div className={`${isAuth ? "block" : 'hidden'} text-center !bg-[white] w-full h-[100vh] flex flex-col items-center justify-center`}>
                 <div className=" text-[38px] md:text-[42px] lg:text-[50px] text-[#2F2B3DC7] mb-4 text-center">Welcome! To JSONONE</div>
-                <div className='text-center' >Enter Password To Continue</div>
+                <div className='text-center  !text-[black]' >Enter Password To Continue</div>
 
                 {error && (
                     <div className=" text-red-500">

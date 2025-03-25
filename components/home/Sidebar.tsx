@@ -17,6 +17,7 @@ import {
 import Image from "next/image";
 import Logo from '@/data/JsononeLogo.svg'
 import Link from "next/link";
+import style from './navbar.module.css'
 
 
 export function Sidebar() {
@@ -57,6 +58,23 @@ export function Sidebar() {
                             </AccordionContent>
                         </AccordionItem>
                     </Accordion>
+                    <div className="!mx-[24px] py-[16px]">
+                        <Link href="/signin">
+                            <button
+                                className={`${style.gray_button} !mb-[16px]  flex items-center justify-center !w-full !text-center !h-[40px] !rounded-[6px]`}
+                            >
+                                Login
+                            </button>
+                        </Link>
+                        <Link href="/signup">
+                            <div
+                                className={`${style.button_dark} !h-[40px] flex items-center justify-center !w-full  !text-center `}
+                            >
+                                Sign Up
+                            </div>
+                        </Link>
+                        {/* <ThemeToggle /> */}
+                    </div>
                 </DrawerContent>
             </Drawer>
         </div>
