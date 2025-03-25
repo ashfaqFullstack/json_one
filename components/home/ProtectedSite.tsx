@@ -49,7 +49,7 @@ const ProtectedSite = ({ children }: { children: React.ReactNode }) => {
                             type="password"
                             placeholder="Password"
                             onChange={(e) => setPassword(e.target.value)}
-                            className="w-full outline-none"
+                            className="w-full !text-[black] outline-none"
                         />
                     </div>
                     <button
