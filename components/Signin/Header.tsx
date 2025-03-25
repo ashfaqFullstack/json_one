@@ -14,7 +14,7 @@ const Header = () => {
         router.back(); // This will navigate to the previous page in history
     };
     return (
-        <div className="relative flex justify-between md:p-[24px]">
+        <div className="relative flex justify-between pt-[12px] md:pt-0 md:p-[24px]">
             <div className='flex gap-[7px] items-center cursor-pointer' onClick={handleBack}>
                 <Image src={righterrow} alt="done" />
                 <div className='text-[14px] font-medium text-[black]'>Back</div>
