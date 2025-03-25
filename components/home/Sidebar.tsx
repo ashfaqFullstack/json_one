@@ -23,7 +23,7 @@ import style from './navbar.module.css'
 export function Sidebar() {
 
     return (
-        <div className="w-full" >
+        <div className="w-full !text-[black]" >
             <Drawer direction="right"  >
                 <DrawerTrigger asChild>
                     <Menu className="h-5 w-5 rotate-0 scale-100" />
