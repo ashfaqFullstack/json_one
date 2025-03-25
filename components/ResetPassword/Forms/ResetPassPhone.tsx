@@ -84,10 +84,10 @@ const ResetPassPhone = () => {
                             <DropdownMenuContent className={style.dropdown} align="start">
                                 {phone.map((page) => (
                                     <DropdownMenuItem
-                                        key={page.id}
-                                        onClick={() => handlePhoneCodeChange(page.title)}
+                                        key={page.code}
+                                        onClick={() => handlePhoneCodeChange(page.dial_code)}
                                     >
-                                        <div>{page.title}</div>
+                                        <div>{page.name}</div>
                                     </DropdownMenuItem>
                                 ))}
                             </DropdownMenuContent>
