@@ -1,3 +1,4 @@
+import Link from "next/link"
 
 function Herosection() {
     return (
@@ -7,7 +8,9 @@ function Herosection() {
             <div className=" lg:text-[20px] text-[11px] md:w-[644px] mt-[20px] md:mt-[31px]">Jsonone is an open-source Backend as a Service, empowering developers to build in days and scale to millions. Kickstart your project with a MongoDB database, seamless authentication, instant APIs, edge functions, real-time subscriptions, secure storage, and vector embeddings—all in one powerful platform.</div>
             <div className=" md:flex items-center text-center mt-[20px] md:mt-[47px] gap-[12px]">
                 <div className="text-[14px] border border-[#c2c1c1] mb-[10px] md:mb-0 rounded-[6px] py-[6px] min-w-[141px]" >Start Your Project</div>
-                <div className="text-[14px] bg-[black] text-[white] rounded-[6px] p-[6px] min-w-[84px]" >Sign In</div>
+                <Link href='/signin' >
+                    <div className="text-[14px] bg-[black] text-[white] rounded-[6px] p-[6px] min-w-[84px]" >Sign In</div>
+                </Link>
             </div>
         </div>
     )

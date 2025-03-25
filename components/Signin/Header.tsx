@@ -6,6 +6,7 @@ import logojson from '@/data/logojson.svg'
 import { useRouter } from 'next/navigation';
 import righterrow from '@/data/righterrow.svg'
 import Link from 'next/link'
+import LanguageSelect from '../Signup/LanguageSelect'
 
 const Header = () => {
     const router = useRouter();
@@ -23,9 +24,7 @@ const Header = () => {
                 <Image src={logojson} className='absolute top-[20px] md:top-[48px] lg:top-[28px] xl:top-[18px] left-0 right-0 mx-auto' alt="done" />
             </Link>
             <div className="flex items-center gap-[8px] text-[black]">
-                <Image src={geo} alt="done" />
-                <div>EN</div>
-                <Image src={downerrow} alt="done" />
+                <LanguageSelect />
             </div>
         </div>
     )
