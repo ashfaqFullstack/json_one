@@ -13,7 +13,8 @@ import ProtectedSite from "@/components/home/ProtectedSite";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Liveblocks Starter Kit",
+  title: "jsonone – Scalable Backend as a Service (BaaS) for Africa",
+  description: "jsonone is Africa’s first full-stack Backend as a Service (BaaS), offering secure authentication, scalable MongoDB databases, edge functions, real-time data APIs, mobile money (MPesa), airtime, messaging, file storage, and event-driven architecture—all in one powerful platform"
 };
 
 export default async function RootLayout({
