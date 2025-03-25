@@ -17,7 +17,7 @@ import { Sidebar } from "./Sidebar";
 
 const Navbar = () => {
   return (
-    <div className=" rounded-none !h-[64px] !bg-[#FAFAFA] text-[black] px-[20px] md:px-[15px] lg:px-[20px] border-0 flex flex-row items-center justify-between ">
+    <div className=" rounded-none !h-[64px] !bg-[#FAFAFA] !!text-[black] px-[20px] md:px-[15px] lg:px-[20px] border-0 flex flex-row items-center justify-between ">
 
       <div className="flex justify-center items-center" >
         <Link href="/home" >

@@ -8,6 +8,7 @@
 
 .gray_button {
     text-align: center;
+    color: black !important;
     border: 2px solid rgb(195, 195, 195);
 }
 
