@@ -35,7 +35,7 @@ export function Sidebar() {
                             <Link href="/home" >
                                 <Image src={Logo} alt="jsonone" className="mr-[10px] lg:mr-[35px]" />
                             </Link>
-                            <X className="h-5 w-5 !bg-[black] !text-[black] rotate-0 scale-100" />
+                            <X className="h-5 w-5 !text-[black] rotate-0 scale-100" />
                         </div>
                     </DrawerTrigger>
                     <Accordion type="single" collapsible className="w-full ">
