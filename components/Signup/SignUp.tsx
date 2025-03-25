@@ -5,6 +5,7 @@ import Image from 'next/image'
 import Link from "next/link";
 import FormSideContent from './FormSideContent'
 import Signup from './Forms/Signup'
+import LanguageSelect from './LanguageSelect';
 
 
 function SignUp() {
@@ -14,11 +15,9 @@ function SignUp() {
                 <div className=" grid grid-cols-12 bg-[black] p-[20px] ">
                     <FormSideContent />
 
-                    <div className="md:col-span-6 col-span-12 xl:max-w-[90vh] rounded-[12px] bg-[#FFFFFF] text-[black]">
-                        <div className="flex  justify-end items-center py-4 px-4  gap-[5px]">
-                            <Image src={geo} alt="done" />
-                            <div>EN</div>
-                            <Image src={downerrow} alt="done" />
+                    <div className="md:col-span-6 relative col-span-12 flex flex-col xl:max-w-[90vh] rounded-[12px] bg-[#FFFFFF] text-[black]">
+                        <div className='absolute right-0 p-[24px]' >
+                            <LanguageSelect />
                         </div>
                         {/* first Input */}
                         <div className=" xl:mx-[150x] lg:mx-[112px] md:mx-[70px] mx-4 md:mt-[50px] py-6 " >

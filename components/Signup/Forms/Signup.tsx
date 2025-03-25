@@ -9,7 +9,7 @@ import {
     DropdownMenuItem,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { phone, country } from "@/data/constatns";
+import { phone, country, Phone } from "@/data/constatns";
 import Chevron from '@/data/chevron_down.svg'
 import style from '../form.module.css'
 import { useState } from 'react'
@@ -86,11 +86,13 @@ const Signup = () => {
 
             {/* Country Dropdown */}
             <div className={`flex justify-between px-[16px] mt-[16px] py-[12px] text-[black] border ${errors.country ? 'border-red-500' : 'border-[#666666]'}`}>
-                <div>{selectedCountry}</div>
                 <DropdownMenu>
                     <DropdownMenuTrigger asChild>
-                        <div className="flex items-center gap-2 cursor-pointer text-[black]">
-                            <Image src={Chevron} alt="chevron" className='w-[20px] h-[20px]' />
+                        <div className="flex justify-between w-full cursor-pointer">
+                            <div>{selectedCountry}</div>
+                            <div className="flex items-center gap-2 text-[black]">
+                                <Image src={Chevron} alt="chevron" className='w-[20px] h-[20px]' />
+                            </div>
                         </div>
                     </DropdownMenuTrigger>
 
@@ -111,6 +113,7 @@ const Signup = () => {
                 />
             </div>
 
+
             {/* Phone Number */}
             <div className="flex mt-[16px] gap-6">
                 <div className="flex justify-center gap-[16px] px-[16px] py-[12px] border border-[#666666] rounded-[4px]">
@@ -123,9 +126,9 @@ const Signup = () => {
                         </DropdownMenuTrigger>
 
                         <DropdownMenuContent className={style.dropdown} align="start">
-                            {phone.map((page) => (
-                                <DropdownMenuItem key={page.id} onClick={() => handlePhoneCodeChange(page.title)}>
-                                    <div>{page.title}</div>
+                            {phone.map((item: Phone) => (
+                                <DropdownMenuItem key={item.code} onClick={() => handlePhoneCodeChange(item.dial_code)}>
+                                    <div>{item.name}</div>
                                 </DropdownMenuItem>
                             ))}
                         </DropdownMenuContent>

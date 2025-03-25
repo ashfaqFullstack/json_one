@@ -5,6 +5,7 @@ import Image from 'next/image'
 import logojson from '@/data/logojson.svg'
 import { useRouter } from 'next/navigation';
 import righterrow from '@/data/righterrow.svg'
+import Link from 'next/link'
 
 const Header = () => {
     const router = useRouter();
@@ -18,7 +19,9 @@ const Header = () => {
                 <div className='text-[14px] font-medium text-[black]'>Back</div>
             </div>
 
-            <Image src={logojson} className='absolute top-[20px] md:top-[48px] lg:top-[28px] xl:top-[18px] left-0 right-0 mx-auto' alt="done" />
+            <Link href='/home' >
+                <Image src={logojson} className='absolute top-[20px] md:top-[48px] lg:top-[28px] xl:top-[18px] left-0 right-0 mx-auto' alt="done" />
+            </Link>
             <div className="flex items-center gap-[8px] text-[black]">
                 <Image src={geo} alt="done" />
                 <div>EN</div>

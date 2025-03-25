@@ -5,9 +5,8 @@ import Footer from "@/components/home/Footer"
 
 const page = () => {
   return (
-    <div className="">
+    <div className="!bg-[white]">
       <Navbar />
-
       <div className="max-w-[90%] mx-auto lg:max-w-[80%]" >
         <Herosection />
         <Card />

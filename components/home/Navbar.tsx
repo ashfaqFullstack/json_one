@@ -4,7 +4,6 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Menu } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 
@@ -14,13 +13,16 @@ import Logo from '@/data/JsononeLogo.svg'
 import Chevron from '@/data/chevron_down.svg'
 import style from './navbar.module.css'
 import { landings } from "@/data/constatns";
+import { Sidebar } from "./Sidebar";
 
 const Navbar = () => {
   return (
-    <div className=" rounded-none !h-[64px] bg-[#FAFAFA] text-[black] px-[20px] md:px-[15px] lg:px-[20px] border-0 flex flex-row items-center justify-between ">
+    <div className=" rounded-none !h-[64px] !bg-[#FAFAFA] text-[black] px-[20px] md:px-[15px] lg:px-[20px] border-0 flex flex-row items-center justify-between ">
 
       <div className="flex justify-center items-center" >
-        <Image src={Logo} alt="jsonone" className="mr-[10px] lg:mr-[35px]" />
+        <Link href="/home" >
+          <Image src={Logo} alt="jsonone" className="mr-[10px] lg:mr-[35px]" />
+        </Link>
         <ul className="hidden md:flex items-center gap-[15px] lg:gap-[24px] py-[17px] ">
           <li>
             <DropdownMenu>
@@ -44,7 +46,7 @@ const Navbar = () => {
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <div className="flex items-center gap-2 cursor-pointer" >
-                  <span className="">Solution</span>
+                  <span className="">Developers</span>
                   <Image src={Chevron} alt="chevron" />
                 </div>
               </DropdownMenuTrigger>
@@ -61,7 +63,7 @@ const Navbar = () => {
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <div className="flex items-center gap-2 cursor-pointer" >
-                <span className="">Resources</span>
+                <span className="">Company</span>
                 <Image src={Chevron} alt="chevron" />
               </div>
             </DropdownMenuTrigger>
@@ -85,8 +87,7 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <div className="flex items-center py-[16px]">
-        <div className={`${style.contact} hidden md:block`}>Contact</div>
+      <div className="hidden md:flex items-center py-[16px]">
         <Link href="/signin">
           <Button variant="default"
             className={`${style.gray_button} hidden md:block !h-[32px] !px-[12px]  !rounded-[6px] !mx-[10px]`}
@@ -102,7 +103,25 @@ const Navbar = () => {
           </div>
         </Link>
 
-        <div className="flex md:hidden mr-2 items-center gap-2">
+
+
+        {/* <ThemeToggle /> */}
+      </div>
+
+      <div className="block md:hidden" >
+        <Sidebar />
+      </div>
+    </div>
+  );
+};
+
+
+
+export default Navbar;
+
+
+
+{/* <div className="flex md:hidden mr-2 items-center gap-2">
           {/* <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <span className="py-2 px-2 bg-gray-100 rounded-md">Pages</span>
@@ -117,105 +136,92 @@ const Navbar = () => {
             </DropdownMenuContent>
           </DropdownMenu> */}
 
-          <DropdownMenu>
-            <DropdownMenuTrigger asChild>
-              <Button variant="outline" size="icon">
-                <Menu className="h-5 w-5 rotate-0 scale-100" />
-              </Button>
-            </DropdownMenuTrigger>
+//   <DropdownMenu>
+//     <DropdownMenuTrigger asChild>
+//       <Button variant="outline" size="icon">
+//         <Menu className="h-5 w-5 rotate-0 scale-100" />
+//       </Button>
+//     </DropdownMenuTrigger>
 
-            <DropdownMenuContent className={`${style.dropdown} gap-2`} align="end">
-              <DropdownMenuItem>
-                <DropdownMenu>
-                  <DropdownMenuTrigger asChild>
-                    <div className="flex items-center gap-2 cursor-pointer" >
-                      <span className="">Products</span>
-                      <Image src={Chevron} alt="chevron" />
-                    </div>
-                  </DropdownMenuTrigger>
+//     <DropdownMenuContent className={`${style.dropdown} gap-2`} align="end">
+//       <DropdownMenuItem>
+//         <DropdownMenu>
+//           <DropdownMenuTrigger asChild>
+//             <div className="flex items-center gap-2 cursor-pointer" >
+//               <span className="">Products</span>
+//               <Image src={Chevron} alt="chevron" />
+//             </div>
+//           </DropdownMenuTrigger>
 
-                  <DropdownMenuContent className={style.dropdown} align="start">
-                    {landings.map((page) => (
-                      <DropdownMenuItem key={page.id}>
-                        <Link href={page.route}>{page.title}</Link>
-                      </DropdownMenuItem>
-                    ))}
-                  </DropdownMenuContent>
-                </DropdownMenu>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <DropdownMenu>
-                  <DropdownMenuTrigger asChild>
-                    <div className="flex items-center gap-2 cursor-pointer" >
-                      <span className="">Solution</span>
-                      <Image src={Chevron} alt="chevron" />
-                    </div>
-                  </DropdownMenuTrigger>
+//           <DropdownMenuContent className={style.dropdown} align="start">
+//             {landings.map((page) => (
+//               <DropdownMenuItem key={page.id}>
+//                 <Link href={page.route}>{page.title}</Link>
+//               </DropdownMenuItem>
+//             ))}
+//           </DropdownMenuContent>
+//         </DropdownMenu>
+//       </DropdownMenuItem>
+//       <DropdownMenuItem>
+//         <DropdownMenu>
+//           <DropdownMenuTrigger asChild>
+//             <div className="flex items-center gap-2 cursor-pointer" >
+//               <span className="">Developers</span>
+//               <Image src={Chevron} alt="chevron" />
+//             </div>
+//           </DropdownMenuTrigger>
 
-                  <DropdownMenuContent className={style.dropdown} align="start">
-                    {landings.map((page) => (
-                      <DropdownMenuItem key={page.id}>
-                        <Link href={page.route}>{page.title}</Link>
-                      </DropdownMenuItem>
-                    ))}
-                  </DropdownMenuContent>
-                </DropdownMenu>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <DropdownMenu>
-                  <DropdownMenuTrigger asChild>
-                    <div className="flex items-center gap-2 cursor-pointer" >
-                      <span className="">Resources</span>
-                      <Image src={Chevron} alt="chevron" />
-                    </div>
-                  </DropdownMenuTrigger>
+//           <DropdownMenuContent className={style.dropdown} align="start">
+//             {landings.map((page) => (
+//               <DropdownMenuItem key={page.id}>
+//                 <Link href={page.route}>{page.title}</Link>
+//               </DropdownMenuItem>
+//             ))}
+//           </DropdownMenuContent>
+//         </DropdownMenu>
+//       </DropdownMenuItem>
+//       <DropdownMenuItem>
+//         <DropdownMenu>
+//           <DropdownMenuTrigger asChild>
+//             <div className="flex items-center gap-2 cursor-pointer" >
+//               <span className="">Company</span>
+//               <Image src={Chevron} alt="chevron" />
+//             </div>
+//           </DropdownMenuTrigger>
 
-                  <DropdownMenuContent className={style.dropdown} align="start">
-                    {landings.map((page) => (
-                      <DropdownMenuItem key={page.id}>
-                        <Link href={page.route}>{page.title}</Link>
-                      </DropdownMenuItem>
-                    ))}
-                  </DropdownMenuContent>
-                </DropdownMenu>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <a href="#pricing">Pricing</a>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <a href="#faqs">FAQs</a>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <div className={`${style.contact} `}>Contact</div>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <Link href="/signin">
-                  <Button variant="default"
-                    className={` ${style.gray_button}  !h-[32px] !px-[12px]  !rounded-[6px]`}
-                  >
-                    Login
-                  </Button>
-                </Link>
-              </DropdownMenuItem>
-              <DropdownMenuItem>
-                <Link href='/signup' >
-                  <div
-                    className={`${style.button_dark} !h-[32px] `}
-                  >
-                    Sign Up
-                  </div>
-                </Link>
-              </DropdownMenuItem>
-            </DropdownMenuContent>
-          </DropdownMenu>
-        </div>
-
-        {/* <ThemeToggle /> */}
-      </div>
-    </div>
-  );
-};
-
-
-
-export default Navbar;
+//           <DropdownMenuContent className={style.dropdown} align="start">
+//             {landings.map((page) => (
+//               <DropdownMenuItem key={page.id}>
+//                 <Link href={page.route}>{page.title}</Link>
+//               </DropdownMenuItem>
+//             ))}
+//           </DropdownMenuContent>
+//         </DropdownMenu>
+//       </DropdownMenuItem>
+//       <DropdownMenuItem>
+//         <a href="#pricing">Pricing</a>
+//       </DropdownMenuItem>
+//       <DropdownMenuItem>
+//         <a href="#faqs">FAQs</a>
+//       </DropdownMenuItem>
+//       <DropdownMenuItem>
+//         <Link href="/signin">
+//           <Button variant="default"
+//             className={` ${style.gray_button}  !h-[32px] !px-[12px]  !rounded-[6px]`}
+//           >
+//             Login
+//           </Button>
+//         </Link>
+//       </DropdownMenuItem>
+//       <DropdownMenuItem>
+//         <Link href='/signup' >
+//           <div
+//             className={`${style.button_dark} !h-[32px] `}
+//           >
+//             Sign Up
+//           </div>
+//         </Link>
+//       </DropdownMenuItem>
+//     </DropdownMenuContent>
+//   </DropdownMenu>
+// </div> */}
